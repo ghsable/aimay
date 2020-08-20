@@ -16,6 +16,7 @@ app = Flask(__name__)
 import os
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
+A3RT_APIKEY = os.environ["A3RT_APIKEY"]
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -41,10 +42,23 @@ def callback():
 # MessageEvent
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    # GET Push Message
+    push_text = event.message.text
+    # GET Reply Messgage(A3RT)
+    reply_text = talkapi_response(push_text)
+    # Reply
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text)
+        #TextSendMessage(text=event.message.text)
+        TextSendMessage(text=reply_text)
     )
+
+# A3RT/TalkAPI
+def talkapi_response(text):
+    apikey = A3RT_APIKEY
+    client = pya3rt.TalkClient(apikey)
+    response = client.talk(text)
+    return ((response['results'])[0])['reply']
 
 if __name__ == "__main__":
    # GET OS.PORT(Mutable)
