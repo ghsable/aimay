@@ -49,7 +49,7 @@ def handle_message(event):
     # GET Push Message
     push_text = event.message.text
     # GET Reply Messgage(A3RT)
-    reply_text = talkapi_response(push_text)
+    reply_text = talkapi_response(push_text) + 'ニャン'
     # Reply
     line_bot_api.reply_message(
         event.reply_token,
