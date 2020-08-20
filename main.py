@@ -12,8 +12,12 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-# GEY OS.ENV
 import os
+import requests
+import pprint
+import pya3rt
+
+# GEY OS.ENV
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
 A3RT_APIKEY = os.environ["A3RT_APIKEY"]
