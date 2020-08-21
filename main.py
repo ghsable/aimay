@@ -60,7 +60,7 @@ def handle_message(event):
 
 # return reply message
 def get_replytext(text):
-    if ('おうむ' in text) or ('オウム' in text) or ('鸚鵡' in text):
+    if ('おうむ' in text) or ('オウム' in text) or ('鸚鵡' in text) or ('🦜' in text):
         reply_text = text
     elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
         ciao_path = os.getcwd() + '/data/CIAO.txt'
