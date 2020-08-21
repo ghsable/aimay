@@ -12,12 +12,12 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-import os
+import os       # Heroku
 import requests # A3RT/TalkAPI
 import pprint   # A3RT/TalkAPI
 import pya3rt   # A3RT/TalkAPI
 
-# get environment variables(Heroku/Settings/Config Variables)
+# get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
 A3RT_APIKEY = os.environ["A3RT_APIKEY"] # A3RT/TalkAPI
@@ -67,6 +67,6 @@ def talkapi_response(text):
     return ((response['results'])[0])['reply']
 
 if __name__ == "__main__":
-   # get port
+   # get port from Heroku
    port = int(os.getenv("PORT"))
    app.run(host="0.0.0.0", port=port)
