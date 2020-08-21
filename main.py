@@ -12,8 +12,8 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-from os import environ, getenv # Heroku
-import pya3rt   # A3RT/TalkAPI:requirements.txt
+import os     # Heroku
+import pya3rt # A3RT/TalkAPI:requirements.txt
 
 # get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
