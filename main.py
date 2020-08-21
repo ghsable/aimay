@@ -67,8 +67,7 @@ def get_replytext(text):
         ciao_path = os.getcwd() + '/data/CIAO.txt'
         with open(ciao_path) as f:
             s = f.readlines()
-        #reply_text = s[2].strip()
-        reply_text = random.randint(0,(len(s) - 1))
+        reply_text = s[random.randint(0,(len(s) - 1))].strip()
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
