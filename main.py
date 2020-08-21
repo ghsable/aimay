@@ -47,7 +47,9 @@ def handle_message(event):
     # get push message
     push_text = event.message.text
 
-    if push_text in {'ちゅーる', 'チュール', 'おやつ', '食'}:
+    if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text):
+        reply_text = push_text
+    elif ('ちゅーる' in push_text) or ('チュール' in push_text) or ('おやつ' in push_text) or ('食' in push_text):
         reply_text = 'ちゅーるよこしなさい!ニャン'
     else:
         # get reply messgage(A3RT/TalkAPI)
