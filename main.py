@@ -67,11 +67,11 @@ def get_replytext(text):
         with open(ciao_path) as f:
             s = f.readlines()
         reply_text = s[random.randint(0,(len(s) - 1))].strip()
-    elif ('音楽' in text) or ('music' in text) or ('Music' in text) or ('歌' in text) or ('曲' in text)
-        music_path = os.getcwd() + '/data/MUSIC.txt'
-        with open(music_path) as f:
-            s = f.readlines()
-        reply_text = s[random.randint(0,(len(s) - 1))].strip()
+#    elif ('音楽' in text) or ('music' in text) or ('Music' in text) or ('歌' in text) or ('曲' in text)
+#        music_path = os.getcwd() + '/data/MUSIC.txt'
+#        with open(music_path) as f:
+#            s = f.readlines()
+#        reply_text = s[random.randint(0,(len(s) - 1))].strip()
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
