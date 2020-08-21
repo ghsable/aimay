@@ -15,7 +15,7 @@ app = Flask(__name__)
 import os       # Heroku
 #import requests # A3RT/TalkAPI
 #import pprint   # A3RT/TalkAPI
-import pya3rt   # A3RT/TalkAPI:requirements.txt
+#import pya3rt   # A3RT/TalkAPI:requirements.txt
 
 # get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
