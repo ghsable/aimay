@@ -69,9 +69,10 @@ def get_replytext(text):
         reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
     elif ('音楽' in text) or ('music' in text) or ('Music' in text) or ('歌' in text) or ('曲' in text)
         music_path = os.getcwd() + '/data/MUSIC.txt'
-        with open(music_path) as music_txt:
-            music_lines = music_txt.readlines()
-        reply_text = 'これがおすすめだニャン!\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
+        reply_text = 'テスト'
+#        with open(music_path) as music_txt:
+#            music_lines = music_txt.readlines()
+#        reply_text = 'これがおすすめだニャン!\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
