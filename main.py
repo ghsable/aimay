@@ -62,7 +62,11 @@ def get_replytext(text):
     if ('おうむ' in text) or ('オウム' in text) or ('鸚鵡' in text):
         reply_text = text
     elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
-        reply_text = 'ちゅーるたべたい!ニャン'
+        #reply_text = 'ちゅーるたべたい!ニャン'
+        ciao_path = os.getcwd() + '/data/CIAO.txt'
+        with open(ciao_path) as f:
+            s = f.read()
+        reply_text = s
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
