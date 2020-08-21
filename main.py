@@ -46,16 +46,20 @@ def callback():
 def handle_message(event):
     # get push message
     push_text = event.message.text
-    # get reply messgage(A3RT/TalkAPI)
-    reply_text = talkapi_response(push_text) + 'ニャン'
-    # reply
-    line_bot_api.reply_message(
-        event.reply_token,
-        # parrot
-        #TextSendMessage(text=event.message.text)
-        # A3RT/TalkAPI
-        TextSendMessage(text=reply_text)
-    )
+
+    if push_text in {'ちゅーる', 'チュール', 'おやつ', '食'}:
+        print('ちゅーるよこしなさい!ニャン')
+    else:
+        # get reply messgage(A3RT/TalkAPI)
+        reply_text = talkapi_response(push_text) + 'ニャン'
+        # reply
+        line_bot_api.reply_message(
+            event.reply_token,
+            # parrot
+            #TextSendMessage(text=event.message.text)
+            # A3RT/TalkAPI
+            TextSendMessage(text=reply_text)
+        )
 
 # return reply message(A3RT/TalkAPI)
 def talkapi_response(text):
