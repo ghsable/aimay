@@ -64,9 +64,9 @@ def get_replytext(text):
         reply_text = text
     elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
         ciao_path = os.getcwd() + '/data/CIAO.txt'
-        with open(ciao_path) as f:
-            s = f.readlines()
-        reply_text = s[random.randint(0,(len(s) - 1))].strip()
+        with open(ciao_path) as ciao_txt:
+            ciao_lines = ciao_txt.readlines()
+        reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
 #    elif ('音楽' in text) or ('music' in text) or ('Music' in text) or ('歌' in text) or ('曲' in text)
 #        music_path = os.getcwd() + '/data/MUSIC.txt'
 #        with open(music_path) as f:
