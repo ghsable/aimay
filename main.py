@@ -57,11 +57,12 @@ def handle_message(event):
         TextSendMessage(text=reply_text)
     )
 
+# return reply message
 def get_replytext(text):
     if ('おうむ' in text) or ('オウム' in text) or ('鸚鵡' in text):
         reply_text = text
     elif ('ちゅーる' in text) or ('チュール' in text) or ('おやつ' in text) or ('食' in text):
-        reply_text = 'ちゅーるよこしなさい!ニャン'
+        reply_text = 'そんなことより、\nちゅーるよこしなさい!ニャン'
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
