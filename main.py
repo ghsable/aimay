@@ -13,6 +13,7 @@ from linebot.models import (
 app = Flask(__name__)
 
 import os     # Heroku
+import random # GitHub
 import pya3rt # A3RT/TalkAPI:requirements.txt
 
 # get environment variables from Heroku(Settings/Config Variables)
@@ -67,7 +68,7 @@ def get_replytext(text):
         with open(ciao_path) as f:
             s = f.readlines()
         #reply_text = s[2].strip()
-        reply_text = (len(s) - 1)
+        reply_text = random.randint(0,(len(s) - 1))
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
