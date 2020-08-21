@@ -13,14 +13,14 @@ from linebot.models import (
 app = Flask(__name__)
 
 import os
-import requests
-import pprint
-import pya3rt
+import requests # A3RT/TalkAPI
+import pprint   # A3RT/TalkAPI
+import pya3rt   # A3RT/TalkAPI
 
-# GEY OS.ENV
+# get environment variables(Heroku/Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
-A3RT_APIKEY = os.environ["A3RT_APIKEY"]
+A3RT_APIKEY = os.environ["A3RT_APIKEY"] # A3RT/TalkAPI
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -38,7 +38,7 @@ def callback():
     try:
         handler.handle(body, signature)
     except InvalidSignatureError:
-        #print("Invalid signature. Please check your channel access token/channel secret.")
+        print("Invalid signature. Please check your channel access token/channel secret.")
         abort(400)
 
     return 'OK'
@@ -46,18 +46,20 @@ def callback():
 # MessageEvent
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    # GET Push Message
+    # get push message
     push_text = event.message.text
-    # GET Reply Messgage(A3RT)
+    # get reply messgage(A3RT/TalkAPI)
     reply_text = talkapi_response(push_text) + 'ニャン'
-    # Reply
+    # reply
     line_bot_api.reply_message(
         event.reply_token,
+        # parrot
         #TextSendMessage(text=event.message.text)
+        # A3RT/TalkAPI
         TextSendMessage(text=reply_text)
     )
 
-# A3RT/TalkAPI
+# return reply message(A3RT/TalkAPI)
 def talkapi_response(text):
     apikey = A3RT_APIKEY
     client = pya3rt.TalkClient(apikey)
@@ -65,6 +67,6 @@ def talkapi_response(text):
     return ((response['results'])[0])['reply']
 
 if __name__ == "__main__":
-   # GET OS.PORT(Mutable)
+   # get port
    port = int(os.getenv("PORT"))
    app.run(host="0.0.0.0", port=port)
