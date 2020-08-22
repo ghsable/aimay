@@ -76,7 +76,7 @@ def get_replytext(text):
         reply_text = 'ここを見てるニャン\n' + 'https://www.google.co.jp/search?q=天気'
     elif ('おやすみ' in text):
         #reply_text = 'おやすみなさいニャン'
-        reply_text = '52002764'
+        reply_text = '0x100086'
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
