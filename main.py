@@ -67,7 +67,7 @@ def get_replytext(text):
         with open(ciao_path) as ciao_txt:
             ciao_lines = ciao_txt.readlines()
         reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
-    elif ('音' in text) or ('歌' in text) or ('曲' in text) or ('Music' in text) or ('music' in text):
+    elif ('おんがく' in text) or ('音' in text) or ('歌' in text) or ('曲' in text) or ('Music' in text) or ('music' in text):
         music_path = os.getcwd() + '/data/MUSIC.txt'
         with open(music_path) as music_txt:
             music_lines = music_txt.readlines()
