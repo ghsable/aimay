@@ -71,7 +71,9 @@ def get_replytext(text):
         music_path = os.getcwd() + '/data/MUSIC.txt'
         with open(music_path) as music_txt:
             music_lines = music_txt.readlines()
-        reply_text = 'これを聴くといいニャン\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
+        reply_text = 'これを聴いてるニャン\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
+    elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
+        reply_text = 'ここを見てるニャン\n' + 'https://www.google.co.jp/search?q=weather'
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
