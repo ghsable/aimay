@@ -71,7 +71,7 @@ def get_replytext(text):
         music_path = os.getcwd() + '/data/MUSIC.txt'
         with open(music_path) as music_txt:
             music_lines = music_txt.readlines()
-        reply_text = 'これを聴くニャン\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
+        reply_text = 'これを聴くといいニャン\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
