@@ -54,7 +54,6 @@ def handle_message(event):
         event.reply_token,
         # parrot
         #TextSendMessage(text=event.message.text)
-        # A3RT/TalkAPI
         TextSendMessage(text=reply_text)
     )
 
@@ -75,8 +74,7 @@ def get_replytext(text):
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
         reply_text = 'ここを見てるニャン\n' + 'https://www.google.co.jp/search?q=天気'
     elif ('おやすみ' in text):
-        #reply_text = 'おやすみなさいニャン'
-        reply_text = '0x100086'
+        reply_text = 'おやすみなさいニャン😴'
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
