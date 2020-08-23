@@ -98,15 +98,15 @@ def get_replymessage(text):
         # Brown, Cony & Sally
         if (s == 0):
             reply_package = '11537'
-            reply_sticker = random.choice(['52002751', '52002753', '52002757', '52002764', '52002766', '52002771'])
+            reply_sticker = random.choice(['52002753', '52002757', '52002764', '52002771'])
         # CHOCO & Friends
         elif (s == 1):
             reply_package = '11538'
-            reply_sticker = random.choice(['51626513', '51626519', '51626533'])
+            reply_sticker = random.choice(['51626513', '51626533'])
         # UNIVERSTAR BT21
         else:
             reply_package = '11539'
-            reply_sticker = random.choice(['52114110', '52114120', '52114121', '52114128', '52114148'])
+            reply_sticker = random.choice(['52114110', '52114120', '52114121', '52114128'])
         # -----
     else:
         # get reply messgage(A3RT/TalkAPI)
