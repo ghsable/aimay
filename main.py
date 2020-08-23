@@ -23,12 +23,7 @@ LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
 A3RT_TALKAPI_APIKEY = os.environ["A3RT_TALKAPI_APIKEY"] # A3RT/TalkAPI
 # TMDb
 TMDB_API_KEY = os.environ["TMDB_API_KEY"]
-tmdb = TMDb()
-tmdb.api_key = TMDB_API_KEY
-tmdb.language = 'ja'
-tmdb.debug = True
-movie = Movie()
-popular = movie.popular()
+
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -98,6 +93,12 @@ def get_replymessage(text):
         reply_type = 'text'
     # TMDb
     elif ('映画' in text):
+        tmdb = TMDb()
+        tmdb.api_key = TMDB_API_KEY
+        tmdb.language = 'ja'
+        tmdb.debug = True
+        movie = Movie()
+        popular = movie.popular()
         popular_titles = []
         popular_overviews = []
         for p in popular:
