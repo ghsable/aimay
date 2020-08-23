@@ -98,8 +98,9 @@ def get_replymessage(text):
         # Brown, Cony & Sally
         if (s == 0):
             reply_package = '11537'
-            reply_sticker_list = ['52002751', '52002753', '52002757', '52002764', '52002766']
-            reply_sticker = random.choice(reply_sticker_list)
+            reply_sticker = random.choice(['52002751', '52002753', '52002757', '52002764', '52002766'])
+            #reply_sticker = random.choice(reply_sticker_list)
+        # CHOCO & Friends
         elif (s == 1):
             reply_package = '11537'
             reply_sticker = '52002734'
