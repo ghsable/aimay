@@ -55,6 +55,7 @@ def handle_message(event):
         # parrot
         #TextSendMessage(text=event.message.text)
         #TextSendMessage(text=reply_text)
+        TextSendMessage(text="")
         StickerSendMessage(package_id='11537',sticker_id='52002753')
     )
 
