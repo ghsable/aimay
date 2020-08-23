@@ -84,6 +84,7 @@ def get_replymessage(text):
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
+        reply_type = 'txt'
     return reply_text, reply_type
 
 # return reply message(A3RT/TalkAPI)
