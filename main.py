@@ -98,13 +98,12 @@ def get_replymessage(text):
         reply_type = 'text'
     # TMDb
     elif ('映画' in text):
-        popular_all = []
-        #popular_all = ''
+        popular_titles = []
+        popular_overviews = []
         for p in popular:
-            #popular_all += '\n\n' + '📽' + p.title + '\n' + p.overview
-            #popular_all += '\n\n' + '📽' + p.title
-            popular_all.append('📽' + p.title)
-        reply_text = '映画のトレンドだニャン\n' + popular_all[1]
+            popular_titles.append('📽' + p.title)
+            popular_overviews.append(p.overview)
+        reply_text = '話題の映画だニャン\n' + popular_titles[5] + '\n' + popular_overviews[5]
         reply_type = 'text'
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
