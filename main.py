@@ -21,9 +21,7 @@ from tmdbv3api import TMDb, Movie # TMDb:requirements.txt
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
 A3RT_TALKAPI_APIKEY = os.environ["A3RT_TALKAPI_APIKEY"] # A3RT/TalkAPI
-# TMDb
-TMDB_API_KEY = os.environ["TMDB_API_KEY"]
-
+TMDB_API_KEY = os.environ["TMDB_API_KEY"]               # TMDb
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
