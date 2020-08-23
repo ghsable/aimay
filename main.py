@@ -103,7 +103,8 @@ def get_replymessage(text):
         for p in popular:
             popular_titles.append('📽' + p.title)
             popular_overviews.append(p.overview)
-        reply_text = '話題の映画だニャン\n' + popular_titles[5] + '\n' + popular_overviews[5]
+        popular_index = random.randint(0,(len(popular_titles) - 1))
+        reply_text = '話題の映画だニャン\n' + popular_titles[popular_index] + '\n' + popular_overviews[popular_index]
         reply_type = 'text'
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
