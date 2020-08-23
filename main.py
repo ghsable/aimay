@@ -100,8 +100,8 @@ def get_replymessage(text):
     elif ('映画' in text):
         popular_all = ''
         for p in popular:
-            popular_all += '\n' + '📽' + p.title + '\n' + p.overview
-        reply_text = '映画のトレンドだニャン\n' + popular_all
+            popular_all += '\n\n' + '📽' + p.title + '\n' + p.overview
+        reply_text = '映画のトレンドだニャン' + popular_all
         reply_type = 'text'
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
