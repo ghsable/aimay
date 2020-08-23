@@ -52,17 +52,19 @@ def handle_message(event):
     # reply
     line_bot_api.reply_message(
         event.reply_token,
-        # parrot
-        #TextSendMessage(text=event.message.text)
-        TextSendMessage(text=reply_text)
-        #StickerSendMessage(package_id='11537',sticker_id='52002753')
+        if (reply_type == 'text'):
+            TextSendMessage(text=reply_text)
+        elif (reply_type == 'sticker'):
+            StickerSendMessage(package_id='11537',sticker_id='52002753')
+        else:
+            TextSendMessage(text='エラーみたいだニャン')
     )
 
 # return reply message and type
 def get_replymessage(text):
     if ('おうむ' in text) or ('オウム' in text) or ('鸚鵡' in text) or ('🦜' in text):
         reply_text = text
-        reply_type = 'txt'
+        reply_type = 'text'
         reply_package = ''
         reply_sticker = ''
     elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
@@ -70,7 +72,7 @@ def get_replymessage(text):
         with open(ciao_path) as ciao_txt:
             ciao_lines = ciao_txt.readlines()
         reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
-        reply_type = 'txt'
+        reply_type = 'text'
         reply_package = ''
         reply_sticker = ''
     elif ('おんがく' in text) or ('うた' in text) or ('きょく' in text) or ('みゅーじっく' in text) or ('音' in text) or ('歌' in text) or ('曲' in text) or ('Music' in text) or ('music' in text):
@@ -78,12 +80,12 @@ def get_replymessage(text):
         with open(music_path) as music_txt:
             music_lines = music_txt.readlines()
         reply_text = 'これを聴いてるニャン\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
-        reply_type = 'txt'
+        reply_type = 'text'
         reply_package = ''
         reply_sticker = ''
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
         reply_text = 'ここを見てるニャン\n' + 'https://www.google.co.jp/search?q=天気'
-        reply_type = 'txt'
+        reply_type = 'text'
         reply_package = ''
         reply_sticker = ''
     elif ('おやすみ' in text):
@@ -94,7 +96,7 @@ def get_replymessage(text):
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
-        reply_type = 'txt'
+        reply_type = 'text'
         reply_package = ''
         reply_sticker = ''
     return reply_text, reply_type, reply_package, reply_sticker
