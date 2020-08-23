@@ -58,7 +58,7 @@ def handle_message(event):
     elif (reply_type == 'sticker'):
         line_bot_api.reply_message(
             event.reply_token,
-            StickerSendMessage(package_id='11537',sticker_id='52002753')
+            StickerSendMessage(package_id=reply_package,sticker_id=reply_sticker)
         )
     else:
         line_bot_api.reply_message(
