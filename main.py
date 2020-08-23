@@ -98,7 +98,7 @@ def get_replymessage(text):
     # TMDb
     elif ('映画' in text):
         m = movie.details(343611)
-        reply_text = 'これを観ているニャン\n' + m.id + m.homepage
+        reply_text = 'これを観ているニャン\n' + m.id
         reply_type = 'text'
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
