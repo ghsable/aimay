@@ -19,7 +19,7 @@ import pya3rt # A3RT/TalkAPI:requirements.txt
 # get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
-A3RT_APIKEY = os.environ["A3RT_APIKEY"] # A3RT/TalkAPI
+A3RT_TALKAPI_APIKEY = os.environ["A3RT_TALKAPI_APIKEY"] # A3RT/TalkAPI
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -82,7 +82,7 @@ def get_replytext(text):
 
 # return reply message(A3RT/TalkAPI)
 def talkapi_response(text):
-    apikey = A3RT_APIKEY
+    apikey = A3RT_TALKAPI_APIKEY
     client = pya3rt.TalkClient(apikey)
     response = client.talk(text)
     return ((response['results'])[0])['reply']
