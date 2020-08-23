@@ -50,15 +50,21 @@ def handle_message(event):
     # get reply message and type
     reply_text, reply_type, reply_package, reply_sticker = get_replymessage(push_text)
     # reply
-    line_bot_api.reply_message(
-        event.reply_token,
-        if (reply_type == 'text'):
+    if (reply_type == 'text'):
+        line_bot_api.reply_message(
+            event.reply_token,
             TextSendMessage(text=reply_text)
-        elif (reply_type == 'sticker'):
+        )
+    elif (reply_type == 'sticker'):
+        line_bot_api.reply_message(
+            event.reply_token,
             StickerSendMessage(package_id='11537',sticker_id='52002753')
-        else:
+        )
+    else:
+        line_bot_api.reply_message(
+            event.reply_token,
             TextSendMessage(text='エラーみたいだニャン')
-    )
+        )
 
 # return reply message and type
 def get_replymessage(text):
@@ -89,7 +95,7 @@ def get_replymessage(text):
         reply_package = ''
         reply_sticker = ''
     elif ('おやすみ' in text):
-        reply_text = 'tttttttt'
+        reply_text = ''
         reply_type = 'sticker'
         reply_package = '11537'
         reply_sticker = '52002753'
