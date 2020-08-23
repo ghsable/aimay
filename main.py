@@ -94,7 +94,7 @@ def get_replymessage(text):
         reply_type = 'sticker'
         s = random.randint(0,2)
         # ----- LINE Available sticker list
-        # https://developers.line.biz/media/messaging-api/sticker_list.pdf
+        #       https://developers.line.biz/media/messaging-api/sticker_list.pdf
         # Brown, Cony & Sally
         if (s == 0):
             reply_package = '11537'
