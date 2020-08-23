@@ -98,7 +98,6 @@ def get_replymessage(text):
         reply_type = 'text'
     # TMDb
     elif ('映画' in text):
-        populars = ''
         for p in popular:
             populars += p.title + '\n'
         reply_text = '最近のトレンドだニャン\n\n' + populars
