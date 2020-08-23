@@ -92,8 +92,19 @@ def get_replymessage(text):
         reply_type = 'text'
     elif ('おやすみ' in text):
         reply_type = 'sticker'
-        reply_package = '11537'
-        reply_sticker = '52002753'
+        s = random.randint(0,2)
+        if (s == 0):
+            reply_package = '11537'
+            reply_sticker = '52002753'
+        elif (s == 1):
+            reply_package = '11537'
+            reply_sticker = '52002734'
+        elif (s == 2):
+            reply_package = '11537'
+            reply_sticker = '52002735'
+        else:
+            reply_package = '11537'
+            reply_sticker = '52002737'
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
