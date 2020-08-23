@@ -93,9 +93,13 @@ def get_replymessage(text):
     elif ('おやすみ' in text):
         reply_type = 'sticker'
         s = random.randint(0,2)
+        # ----- LINE Available sticker list
+        # https://developers.line.biz/media/messaging-api/sticker_list.pdf
+        # Brown, Cony & Sally
         if (s == 0):
             reply_package = '11537'
-            reply_sticker = '52002753'
+            reply_sticker_list = ['52002751', '52002753', '52002757', '52002764', '52002766']
+            reply_sticker = random.choice(reply_sticker_list)
         elif (s == 1):
             reply_package = '11537'
             reply_sticker = '52002734'
@@ -105,6 +109,7 @@ def get_replymessage(text):
         else:
             reply_package = '11537'
             reply_sticker = '52002737'
+        # -----
     else:
         # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
