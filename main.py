@@ -99,7 +99,7 @@ def get_replymessage(text):
     # TMDb
     elif ('映画' in text):
         for p in popular:
-            populars += p.title
+            populars += p.id
         reply_text = 'これを観ているニャン\n' + populars
         reply_type = 'text'
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
