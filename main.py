@@ -89,7 +89,7 @@ def get_replymessage(text):
         reply_package = ''
         reply_sticker = ''
     elif ('おやすみ' in text):
-        reply_text = ''
+        reply_text = 'tttttttt'
         reply_type = 'sticker'
         reply_package = '11537'
         reply_sticker = '52002753'
