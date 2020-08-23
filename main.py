@@ -25,7 +25,7 @@ A3RT_TALKAPI_APIKEY = os.environ["A3RT_TALKAPI_APIKEY"] # A3RT/TalkAPI
 TMDB_API_KEY = os.environ["TMDB_API_KEY"]
 tmdb = TMDb()
 tmdb.api_key = TMDB_API_KEY
-tmdb.language = 'en'
+tmdb.language = 'ja'
 tmdb.debug = True
 movie = Movie()
 
@@ -101,7 +101,7 @@ def get_replymessage(text):
         reply_text = 'これを観ているニャン\n' + m.title
         reply_type = 'text'
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
-        reply_text = 'ここを見てるニャン\n' + 'https://www.google.co.jp/search?q=天気'
+        reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
         reply_type = 'text'
     elif ('おやすみ' in text):
         reply_type = 'sticker'
