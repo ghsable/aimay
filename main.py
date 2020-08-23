@@ -12,14 +12,22 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-import os     # Heroku
-import random # GitHub
-import pya3rt # A3RT/TalkAPI:requirements.txt
+import os                         # Heroku
+import random                     # GitHub
+import pya3rt                     # A3RT/TalkAPI:requirements.txt
+from tmdbv3api import TMDb, Movie # TMDb:requirements.txt
 
 # get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
 A3RT_TALKAPI_APIKEY = os.environ["A3RT_TALKAPI_APIKEY"] # A3RT/TalkAPI
+# TMDb
+TMDB_API_KEY = os.environ["TMDB_API_KEY"]
+tmdb = TMDb()
+tmdb.api_key = TMDB_API_KEY
+tmdb.language = 'en'
+tmdb.debug = True
+movie = Movie()
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -86,6 +94,11 @@ def get_replymessage(text):
         with open(music_path) as music_txt:
             music_lines = music_txt.readlines()
         reply_text = 'これを聴いてるニャン\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
+        reply_type = 'text'
+    # TMDb
+    elif ('映画' in text):
+        m = movie.details(343611)
+        reply_text = 'これを観ているニャン\n' + m.title
         reply_type = 'text'
     elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
         reply_text = 'ここを見てるニャン\n' + 'https://www.google.co.jp/search?q=天気'
