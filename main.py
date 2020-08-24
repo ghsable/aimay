@@ -126,8 +126,8 @@ def get_replymessage(text):
             reply_package = '11539'
             reply_sticker = random.choice(['52114110', '52114120', '52114121', '52114128'])
         # -----
+    # A3RT/TalkAPI
     else:
-        # get reply messgage(A3RT/TalkAPI)
         reply_text = talkapi_response(text) + 'ニャン'
         reply_type = 'text'
     return reply_text, reply_type, reply_package, reply_sticker
