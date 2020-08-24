@@ -78,24 +78,13 @@ def get_replymessage(text):
         reply_text = text
         reply_type = 'text'
     elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
-#        ciao_path = os.getcwd() + '/data/CIAO.txt'
-#        with open(ciao_path) as ciao_txt:
-#            ciao_lines = ciao_txt.readlines()
-#        reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
-#        reply_type = 'text'
         reply_text = return_data('CIAO.txt')
         reply_type = 'text'
     elif ('りんりん' in text) or ('りんちゃん' in text):
-        rin_path = os.getcwd() + '/data/RIN.txt'
-        with open(rin_path) as rin_txt:
-            rin_lines = rin_txt.readlines()
-        reply_text = rin_lines[random.randint(0,(len(rin_lines) - 1))].strip()
+        reply_text = return_data('RIN.txt')
         reply_type = 'text'
     elif ('おんがく' in text) or ('うた' in text) or ('きょく' in text) or ('みゅーじっく' in text) or ('音' in text) or ('歌' in text) or ('曲' in text) or ('Music' in text) or ('music' in text):
-        music_path = os.getcwd() + '/data/MUSIC.txt'
-        with open(music_path) as music_txt:
-            music_lines = music_txt.readlines()
-        reply_text = 'これを聴いているニャン\n' + music_lines[random.randint(0,(len(music_lines) - 1))].strip()
+        reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
     # TMDb
     elif ('映画' in text):
