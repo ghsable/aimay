@@ -78,10 +78,12 @@ def get_replymessage(text):
         reply_text = text
         reply_type = 'text'
     elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
-        ciao_path = os.getcwd() + '/data/CIAO.txt'
-        with open(ciao_path) as ciao_txt:
-            ciao_lines = ciao_txt.readlines()
-        reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
+#        ciao_path = os.getcwd() + '/data/CIAO.txt'
+#        with open(ciao_path) as ciao_txt:
+#            ciao_lines = ciao_txt.readlines()
+#        reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
+#        reply_type = 'text'
+        reply_text = return_data('CIAO.txt')
         reply_type = 'text'
     elif ('りんりん' in text) or ('りんちゃん' in text):
         rin_path = os.getcwd() + '/data/RIN.txt'
@@ -137,6 +139,13 @@ def get_replymessage(text):
         reply_text = talkapi_response(text) + 'ニャン'
         reply_type = 'text'
     return reply_text, reply_type, reply_package, reply_sticker
+
+# return reply message(data/*.txt)
+def return_data(filename):
+    path = os.getcwd() + '/data/' + filename
+    with open(path) as data_text:
+        lines = data_text.readlines()
+    return lines[random.randint(0,(len(lines) - 1))].strip()
 
 # return reply message(A3RT/TalkAPI)
 def talkapi_response(text):
