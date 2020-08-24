@@ -131,8 +131,8 @@ def get_replymessage(push_text):
 
 # return reply message(data/*.txt)
 def return_data(filename):
-    path = os.getcwd() + '/data/' + filename
-    with open(path) as data_text:
+    filepath = os.getcwd() + '/data/' + filename
+    with open(filepath) as data_text:
         lines = data_text.readlines()
     return lines[random.randint(0,(len(lines) - 1))].strip()
 
