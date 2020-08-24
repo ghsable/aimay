@@ -69,25 +69,25 @@ def handle_message(event):
         )
 
 # return reply message and type
-def get_replymessage(text):
+def get_replymessage(push_text):
     reply_text    = ''
     reply_type    = ''
     reply_package = ''
     reply_sticker = ''
-    if ('おうむ' in text) or ('オウム' in text) or ('鸚鵡' in text) or ('🦜' in text):
+    if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text) or ('🦜' in push_text):
         reply_text = text
         reply_type = 'text'
-    elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
+    elif ('ちゅーる' in push_text) or ('チュール' in push_text) or ('飲' in push_text) or ('食' in push_text):
         reply_text = return_data('CIAO.txt')
         reply_type = 'text'
-    elif ('りんりん' in text) or ('りんちゃん' in text) or ('りんたろう' in text) or ('凛太郎' in text):
+    elif ('りんりん' in push_text) or ('りんちゃん' in push_text) or ('りんたろう' in push_text) or ('凛太郎' in push_text):
         reply_text = return_data('RIN.txt')
         reply_type = 'text'
-    elif ('おんがく' in text) or ('うた' in text) or ('きょく' in text) or ('音' in text) or ('歌' in text) or ('曲' in text):
+    elif ('おんがく' in push_text) or ('うた' in push_text) or ('きょく' in push_text) or ('音' in push_text) or ('歌' in push_text) or ('曲' in push_text):
         reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
     # TMDb
-    elif ('映画' in text):
+    elif ('映画' in push_text):
         tmdb = TMDb()
         tmdb.api_key = TMDB_API_KEY
         tmdb.language = 'ja'
@@ -102,10 +102,10 @@ def get_replymessage(text):
         popular_index = random.randint(0,(len(popular_titles) - 1))
         reply_text = 'これを観ているニャン\n' + popular_titles[popular_index] + '\n' + popular_overviews[popular_index]
         reply_type = 'text'
-    elif ('てんき' in text) or ('きおん' in text) or ('天気' in text) or ('気温' in text) or ('降水' in text):
+    elif ('てんき' in push_text) or ('きおん' in push_text) or ('天気' in push_text) or ('気温' in push_text) or ('降水' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
         reply_type = 'text'
-    elif ('おやすみ' in text):
+    elif ('おやすみ' in push_text):
         reply_type = 'sticker'
         s = random.randint(0,2)
         # ----- LINE Available sticker list
@@ -125,7 +125,7 @@ def get_replymessage(text):
         # -----
     # A3RT/TalkAPI
     else:
-        reply_text = talkapi_response(text) + 'ニャン'
+        reply_text = talkapi_response(push_text) + 'ニャン'
         reply_type = 'text'
     return reply_text, reply_type, reply_package, reply_sticker
 
@@ -137,10 +137,10 @@ def return_data(filename):
     return lines[random.randint(0,(len(lines) - 1))].strip()
 
 # return reply message(A3RT/TalkAPI)
-def talkapi_response(text):
+def talkapi_response(push_text):
     apikey = A3RT_TALKAPI_APIKEY
     client = pya3rt.TalkClient(apikey)
-    response = client.talk(text)
+    response = client.talk(push_text)
     return ((response['results'])[0])['reply']
 
 if __name__ == "__main__":
