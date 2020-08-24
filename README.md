@@ -1,12 +1,12 @@
 # TEST
-This is LINE Bot.
+This is LINE Bot <- (🐈 x 🤖 x 🧠)
 
 ## Try it out!
 Use this Line QR code to add the Bot:  
 **OR CODE**
 
 ## Usage
-* This Bot only supports Japanese.
+* This Bot only supports Japanese🇯🇵
 
 Example:
 
