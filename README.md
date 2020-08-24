@@ -6,7 +6,7 @@ Use this Line QR code to add the Bot:
 **OR CODE**
 
 ## Usage
-* This Bot only supports Japanese  
+* This Bot only supports Japanese.
 
 Example:
 
@@ -32,3 +32,4 @@ Example:
 | [Flask](https://flask.palletsprojects.com/en/1.1.x/)             | [Flask](https://pypi.org/project/Flask/)               | [pallets/flask](https://github.com/pallets/flask)                       | `1.1.2`                                                                 | -                                                 |
 | [TMDb](https://www.themoviedb.org/?language=ja)                  | [tmdbv3api](https://pypi.org/project/tmdbv3api/)       | [AnthonyBloomer/tmdbv3api](https://github.com/AnthonyBloomer/tmdbv3api) | `1.6.2`                                                                 | `TMDB_API_KEY`                                    |
 | [A3RT/TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/) | [pya3rt](https://pypi.org/project/pya3rt/)             | [nocotan/pya3rt](https://github.com/nocotan/pya3rt)                     | `1.1`                                                                   | `A3RT_TALKAPI_APIKEY`                             |
+
