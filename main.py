@@ -117,11 +117,11 @@ def get_replymessage(push_text):
         # CHOCO & Friends
         elif (s == 1):
             reply_package = '11538'
-            reply_sticker = random.choice(['51626513', '51626533'])
+            reply_sticker = random.choice(['51626513'])
         # UNIVERSTAR BT21
         else:
             reply_package = '11539'
-            reply_sticker = random.choice(['52114120', '52114121', '52114128'])
+            reply_sticker = random.choice(['52114120', '52114121'])
         # -----
     # A3RT/TalkAPI
     else:
