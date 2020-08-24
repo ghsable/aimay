@@ -16,6 +16,7 @@ Example:
 | ねむい | 私もねむいですニャン |
 | 🦜おうむがえし！ | 🦜おうむがえし！ |
 | ちゅーる買ったよ | ちゅーるたべたいニャン |
+| りんりん(相棒)の調子はどう？ | りんりんは寝ているニャン |
 | いい音楽ないかな | これを聴いているニャン<br>タイトル,[URL](https://www.youtube.com/?gl=JP) |
 | 映画見たい | これを観ているニャン<br>[タイトル\nあらすじ](https://www.themoviedb.org/?language=ja) |
 | 天気どうなるかな | ここを見ているニャン<br>[URL](https://www.google.co.jp/search?q=天気) |
