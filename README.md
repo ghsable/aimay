@@ -6,12 +6,12 @@ Use this Line QR code to add the Bot:
 **OR CODE**
 
 ## Usage
-* This bot only supports Japanese  
+* This Bot only supports Japanese  
 
-example:
+Example:
 
 | Push Message | Reply Message |
-| ---- | ---- |
+| :--- | :--- |
 | おはよう | おやようございますニャン |
 | ねむい | 私もねむいですニャン |
 | 🦜おうむがえし！ | 🦜おうむがえし！ |
@@ -25,9 +25,10 @@ example:
 * [LINE](https://line.me/ja/) + [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/test/blob/master/runtime.txt) + [modules](#modules) + [Heroku](https://jp.heroku.com/) = (⋈MAY◍＞◡＜◍)。✧♡
 
 ### modules
-| Homepage | [PyPI](https://pypi.org/) | [GitHub](https://github.com/) | [Version](https://github.com/ghsable/test/blob/master/requirements.txt) | Environment variable |
-| ---- | ---- | ---- | ---- | ---- |
-| [LINE Developers](https://developers.line.biz/ja/) | [line-bot-sdk](https://pypi.org/project/line-bot-sdk/) | [line/line-bot-sdk-python](https://github.com/line/line-bot-sdk-python) | `1.16.0` | `LINE_CHANNEL_ACCESS_TOKEN`,`LINE_CHANNEL_SECRET` |
-| [Flask](https://flask.palletsprojects.com/en/1.1.x/) | [Flask](https://pypi.org/project/Flask/) | [pallets/flask](https://github.com/pallets/flask) | `1.1.2` | - |
-| [TMDb](https://www.themoviedb.org/?language=ja) | [tmdbv3api](https://pypi.org/project/tmdbv3api/) | [AnthonyBloomer/tmdbv3api](https://github.com/AnthonyBloomer/tmdbv3api) | `1.6.2` | `TMDB_API_KEY` |
-| [A3RT/TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/) | [pya3rt](https://pypi.org/project/pya3rt/) | [nocotan/pya3rt](https://github.com/nocotan/pya3rt)                      | `1.1` | `A3RT_TALKAPI_APIKEY` |
+
+| Homepage                                                         | [PyPI](https://pypi.org/)                              | [GitHub](https://github.com/)                                           | [Version](https://github.com/ghsable/test/blob/master/requirements.txt) | Environment variable                              |
+| :---                                                             | :---                                                   | :---                                                                    | :---                                                                    | :---                                              |
+| [LINE Developers](https://developers.line.biz/ja/)               | [line-bot-sdk](https://pypi.org/project/line-bot-sdk/) | [line/line-bot-sdk-python](https://github.com/line/line-bot-sdk-python) | `1.16.0`                                                                | `LINE_CHANNEL_ACCESS_TOKEN`,`LINE_CHANNEL_SECRET` |
+| [Flask](https://flask.palletsprojects.com/en/1.1.x/)             | [Flask](https://pypi.org/project/Flask/)               | [pallets/flask](https://github.com/pallets/flask)                       | `1.1.2`                                                                 | -                                                 |
+| [TMDb](https://www.themoviedb.org/?language=ja)                  | [tmdbv3api](https://pypi.org/project/tmdbv3api/)       | [AnthonyBloomer/tmdbv3api](https://github.com/AnthonyBloomer/tmdbv3api) | `1.6.2`                                                                 | `TMDB_API_KEY`                                    |
+| [A3RT/TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/) | [pya3rt](https://pypi.org/project/pya3rt/)             | [nocotan/pya3rt](https://github.com/nocotan/pya3rt)                     | `1.1`                                                                   | `A3RT_TALKAPI_APIKEY`                             |
