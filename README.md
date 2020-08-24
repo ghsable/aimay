@@ -23,7 +23,7 @@ Example:
 | おやすみー | [sticker](https://developers.line.biz/media/messaging-api/sticker_list.pdf) |
 
 ## Development
-* [LINE](https://line.me/ja/) + [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/test/blob/master/runtime.txt) + [modules](#modules) + [GitHub](https://github.com/) + [Heroku](https://jp.heroku.com/) = (⋈MAY◍＞◡＜◍)。✧♡
+* [LINE](https://line.me/ja/) + [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/test/blob/master/runtime.txt) + [modules](#modules) + [GitHub](https://github.com/) + [Heroku](https://jp.heroku.com/) = (⋈MAY◍＞◡＜◍)。✧♡RIN♡
 
 ### modules
 
