@@ -70,8 +70,8 @@ def handle_message(event):
 
 # return reply message and type
 def get_replymessage(text):
-    reply_text = ''
-    reply_type = ''
+    reply_text    = ''
+    reply_type    = ''
     reply_package = ''
     reply_sticker = ''
     if ('おうむ' in text) or ('オウム' in text) or ('鸚鵡' in text) or ('🦜' in text):
@@ -121,7 +121,7 @@ def get_replymessage(text):
         # UNIVERSTAR BT21
         else:
             reply_package = '11539'
-            reply_sticker = random.choice(['52114110', '52114120', '52114121', '52114128'])
+            reply_sticker = random.choice(['52114120', '52114121', '52114128'])
         # -----
     # A3RT/TalkAPI
     else:
