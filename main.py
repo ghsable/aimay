@@ -80,10 +80,10 @@ def get_replymessage(text):
     elif ('ちゅーる' in text) or ('チュール' in text) or ('飲' in text) or ('食' in text):
         reply_text = return_data('CIAO.txt')
         reply_type = 'text'
-    elif ('りんりん' in text) or ('りんちゃん' in text):
+    elif ('りんりん' in text) or ('りんちゃん' in text) or ('りんたろう' in text) or ('凛太郎' in text):
         reply_text = return_data('RIN.txt')
         reply_type = 'text'
-    elif ('おんがく' in text) or ('うた' in text) or ('きょく' in text) or ('みゅーじっく' in text) or ('音' in text) or ('歌' in text) or ('曲' in text) or ('Music' in text) or ('music' in text):
+    elif ('おんがく' in text) or ('うた' in text) or ('きょく' in text) or ('音' in text) or ('歌' in text) or ('曲' in text):
         reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
     # TMDb
