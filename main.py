@@ -138,10 +138,9 @@ def return_data(filename):
 
 # return reply message(A3RT/TalkAPI)
 def talkapi_response(push_text):
-    apikey = A3RT_TALKAPI_APIKEY
-    client = pya3rt.TalkClient(apikey)
-    response = client.talk(push_text)
-    return ((response['results'])[0])['reply']
+    talkapi_client = pya3rt.TalkClient(A3RT_TALKAPI_APIKEY)
+    talkapi_response = talkapi_client.talk(push_text)
+    return ((talkapi_response['results'])[0])['reply']
 
 if __name__ == "__main__":
    # get port from Heroku
