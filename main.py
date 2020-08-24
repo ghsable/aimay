@@ -83,6 +83,12 @@ def get_replymessage(text):
             ciao_lines = ciao_txt.readlines()
         reply_text = ciao_lines[random.randint(0,(len(ciao_lines) - 1))].strip()
         reply_type = 'text'
+    elif ('りんりん' in text) or ('りんちゃん' in text):
+        rin_path = os.getcwd() + '/data/RIN.txt'
+        with open(rin_path) as rin_txt:
+            rin_lines = rin_txt.readlines()
+        reply_text = rin_lines[random.randint(0,(len(rin_lines) - 1))].strip()
+        reply_type = 'text'
     elif ('おんがく' in text) or ('うた' in text) or ('きょく' in text) or ('みゅーじっく' in text) or ('音' in text) or ('歌' in text) or ('曲' in text) or ('Music' in text) or ('music' in text):
         music_path = os.getcwd() + '/data/MUSIC.txt'
         with open(music_path) as music_txt:
