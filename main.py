@@ -90,7 +90,7 @@ def get_replymessage(push_text):
     elif ('映画' in push_text):
         tmdb          = TMDb()
         tmdb.api_key  = TMDB_API_KEY
-        tmdb.language = 'en'
+        tmdb.language = 'ja'
         tmdb.debug    = True
         movie         = Movie()
         popular       = movie.popular()
@@ -98,8 +98,7 @@ def get_replymessage(push_text):
         popular_overviews = []
         for p in popular:
             popular_titles.append('📽' + p.title)
-            #popular_overviews.append(p.overview)
-            popular_overviews.append(p.id)
+            popular_overviews.append(p.overview)
         popular_index = random.randint(0,(len(popular_titles) - 1))
         reply_text = 'これを観ているニャン\n' + popular_titles[popular_index] + '\n' + popular_overviews[popular_index]
         reply_type = 'text'
