@@ -27,7 +27,7 @@ Example:
 
 ### modules
 
-| Homepage                                                         | [PyPI](https://pypi.org/)                              | [GitHub](https://github.com/)                                           | [Version](https://github.com/ghsable/test/blob/master/requirements.txt) | Environment variable                                 |
+| Homepage                                                         | PyPI                                                   | GitHub                                                                  | [Version](https://github.com/ghsable/test/blob/master/requirements.txt) | Environment variable                                 |
 | :---                                                             | :---                                                   | :---                                                                    | :---                                                                    | :---                                                 |
 | [LINE Developers](https://developers.line.biz/ja/)               | [line-bot-sdk](https://pypi.org/project/line-bot-sdk/) | [line/line-bot-sdk-python](https://github.com/line/line-bot-sdk-python) | `1.16.0`                                                                | `LINE_CHANNEL_ACCESS_TOKEN`<br>`LINE_CHANNEL_SECRET` |
 | [Flask](https://flask.palletsprojects.com/en/1.1.x/)             | [Flask](https://pypi.org/project/Flask/)               | [pallets/flask](https://github.com/pallets/flask)                       | `1.1.2`                                                                 | `-`                                                  |
