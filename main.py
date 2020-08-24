@@ -70,10 +70,10 @@ def handle_message(event):
 
 # return reply message and type
 def get_replymessage(push_text):
-    reply_text    = ''
-    reply_type    = ''
-    reply_package = ''
-    reply_sticker = ''
+    reply_text     = ''
+    reply_type     = ''
+    reply_package  = ''
+    reply_sticker  = ''
     if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text) or ('🦜' in push_text):
         reply_text = push_text
         reply_type = 'text'
@@ -88,13 +88,13 @@ def get_replymessage(push_text):
         reply_type = 'text'
     # TMDb
     elif ('映画' in push_text):
-        tmdb = TMDb()
-        tmdb.api_key = TMDB_API_KEY
+        tmdb          = TMDb()
+        tmdb.api_key  = TMDB_API_KEY
         tmdb.language = 'ja'
-        tmdb.debug = True
-        movie = Movie()
-        popular = movie.popular()
-        popular_titles = []
+        tmdb.debug    = True
+        movie         = Movie()
+        popular       = movie.popular()
+        popular_titles    = []
         popular_overviews = []
         for p in popular:
             popular_titles.append('📽' + p.title)
