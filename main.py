@@ -68,7 +68,7 @@ def handle_message(event):
             TextSendMessage(text='エラーみたいだニャン')
         )
 
-# return reply message and type
+# return reply message and type and index
 def get_replymessage(push_text):
     reply_text     = ''
     reply_type     = ''
@@ -106,16 +106,16 @@ def get_replymessage(push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
         reply_type = 'text'
     elif ('おやすみ' in push_text):
-        reply_type = 'sticker'
-        s = random.randint(0,2)
+        reply_type   = 'sticker'
+        sticker_index = random.randint(0,2)
         # ----- LINE Available sticker list
         #       https://developers.line.biz/media/messaging-api/sticker_list.pdf
         # Brown, Cony & Sally
-        if (s == 0):
+        if (sticker_index == 0):
             reply_package = '11537'
             reply_sticker = random.choice(['52002753', '52002757', '52002764', '52002771'])
         # CHOCO & Friends
-        elif (s == 1):
+        elif (sticker_index == 1):
             reply_package = '11538'
             reply_sticker = random.choice(['51626513'])
         # UNIVERSTAR BT21
