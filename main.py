@@ -118,6 +118,9 @@ def get_replymessage(push_text):
                 filmarks_index = filmarks_index + 1
             reply_text = 'これを観ているニャン\n' + 'https://filmarks.com/movies/' + str(filmarks_index)
         reply_type = 'text'
+    elif ('げーむ' in push_text) or ('ゲーム' in push_text):
+        reply_text = 'ここを見ているニャン\n' + 'https://www.metacritic.com/game'
+        reply_type = 'text'
     elif ('てんき' in push_text) or ('きおん' in push_text) or ('天気' in push_text) or ('気温' in push_text) or ('降水' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
         reply_type = 'text'
