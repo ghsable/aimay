@@ -75,7 +75,7 @@ def get_replymessage(push_text):
     reply_package  = ''
     reply_sticker  = ''
     if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text) or ('🦜' in push_text):
-        reply_text = push_text
+        reply_text = push_text + 'ニャン'
         reply_type = 'text'
     elif ('ちゅーる' in push_text) or ('チュール' in push_text) or ('飲' in push_text) or ('食' in push_text):
         reply_text = return_data('CIAO.txt')
