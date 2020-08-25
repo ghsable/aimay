@@ -6,7 +6,7 @@ Use this Line QR code to add the Bot:
 **OR CODE**
 
 ## Usage
-* This Bot only supports Japanese🗾
+* This Bot only supports 🗾Japanese
 
 Example:
 
