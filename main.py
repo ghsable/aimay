@@ -106,7 +106,10 @@ def get_replymessage(push_text):
     elif ('えいが' in push_text) or ('映画' in push_text):
         movie_switch = random.randint(0,1)
         if (movie_switch == 0):
-            tmdb_index = random.randint(2,88956)
+            #tmdb_index = random.randint(2,88956)
+            tmdb_index = 12830
+            while (tmdb_index in {12830}): #Blacklist
+                tmdb_index = tmdb_index + 1
             reply_text = 'https://www.themoviedb.org/movie/' + str(tmdb_index) + '?language=ja'
         else:
             filmarks_index = random.randint(1,92440)
