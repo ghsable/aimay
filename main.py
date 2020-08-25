@@ -102,27 +102,32 @@ def get_replymessage(push_text):
         popular_index = random.randint(0,(len(popular_titles) - 1))
         reply_text = 'これを観ているニャン\n' + popular_titles[popular_index] + '\n' + popular_overviews[popular_index]
         reply_type = 'text'
-    # Filmarks
+    # TMDb and Filmarks
     elif ('えいが' in push_text) or ('映画' in push_text):
-        filmarks_index = random.randint(1,92440)
-        while (filmarks_index in {58803, 67079, 77193}): #Blacklist
-            filmarks_index = filmarks_index + 1
-        reply_text = 'これを観ているニャン\n' + 'https://filmarks.com/movies/' + str(filmarks_index)
+        movie_switch = random.randint(0,1)
+        if (movie_switch == 0):
+            tmdb_index = random.randint(2,88956)
+            reply_text = 'https://www.themoviedb.org/movie/' + str(tmdb_index) + '?language=ja'
+        else:
+            filmarks_index = random.randint(1,92440)
+            while (filmarks_index in {58803, 67079, 77193}): #Blacklist
+                filmarks_index = filmarks_index + 1
+            reply_text = 'これを観ているニャン\n' + 'https://filmarks.com/movies/' + str(filmarks_index)
         reply_type = 'text'
     elif ('てんき' in push_text) or ('きおん' in push_text) or ('天気' in push_text) or ('気温' in push_text) or ('降水' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
         reply_type = 'text'
     elif ('おやすみ' in push_text):
-        reply_type   = 'sticker'
-        sticker_index = random.randint(0,2)
+        reply_type     = 'sticker'
+        sticker_switch = random.randint(0,2)
         # ----- LINE Available sticker list
         #       https://developers.line.biz/media/messaging-api/sticker_list.pdf
         # Brown, Cony & Sally
-        if (sticker_index == 0):
+        if (sticker_switch == 0):
             reply_package = '11537'
             reply_sticker = random.choice(['52002753', '52002757', '52002764', '52002771'])
         # CHOCO & Friends
-        elif (sticker_index == 1):
+        elif (sticker_switch == 1):
             reply_package = '11538'
             reply_sticker = random.choice(['51626513'])
         # UNIVERSTAR BT21
