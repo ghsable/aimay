@@ -18,8 +18,8 @@ Example:
 | ちゅーる買ったよ | ちゅーるたべたいニャン |
 | りんりん(相棒)の調子はどう？ | りんりんは寝ているニャン |
 | いい音楽ないかな | これを聴いているニャン<br>[あいみょん,裸の心](https://www.youtube.com/watch?v=yOAwvRmVIyo) |
-| 映画を観たいな | これを観ているニャン<br>[イミテーション・ゲーム](https://filmarks.com/movies/57847)
 | 人気な映画を知りたいな | これを観ているニャン<br>📽[イミテーション・ゲーム](https://www.themoviedb.org/movie/205596-the-imitation-game?language=ja)<br>第2次世界大戦下の1939年イギリス... |
+| 映画を観たいな | これを観ているニャン<br>[イミテーション・ゲーム](https://filmarks.com/movies/57847)
 | 天気どうなるかな | ここを見ているニャン<br>[Google天気](https://www.google.co.jp/search?q=天気) |
 | おやすみー | [sticker](https://developers.line.biz/media/messaging-api/sticker_list.pdf) |
 
