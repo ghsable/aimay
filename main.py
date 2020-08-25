@@ -88,7 +88,7 @@ def get_replymessage(push_text):
         reply_type = 'text'
     # Filmarks
     elif ('映画' in push_text):
-        reply_text = 'https://filmarks.com/movies/' + random.randint(1,92440)
+        reply_text = 'https://filmarks.com/movies/' + str(random.randint(1,92440))
         reply_type = 'text'
     # TMDb
     elif ('人気の映画' in push_text):
