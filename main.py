@@ -129,16 +129,16 @@ def get_replymessage(push_text):
         reply_type = 'text'
     return reply_text, reply_type, reply_package, reply_sticker
 
-# return reply message(data/*.txt)
+# return reply message(from data/*.txt)
 def return_data(filename):
     filepath = os.getcwd() + '/data/' + filename
-    with open(filepath) as data_text:
-        lines = data_text.readlines()
-    return lines[random.randint(0,(len(lines) - 1))].strip()
+    with open(filepath) as datafile:
+        datalines = datafile.readlines()
+    return datalines[random.randint(0,(len(datalines) - 1))].strip()
 
 # return reply message(A3RT/TalkAPI)
 def talkapi_response(push_text):
-    talkapi_client = pya3rt.TalkClient(A3RT_TALKAPI_APIKEY)
+    talkapi_client   = pya3rt.TalkClient(A3RT_TALKAPI_APIKEY)
     talkapi_response = talkapi_client.talk(push_text)
     return ((talkapi_response['results'])[0])['reply']
 
