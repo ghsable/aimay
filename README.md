@@ -20,6 +20,7 @@ Example:
 | いい音楽ないかな | これを聴いているニャン<br>[あいみょん,裸の心](https://www.youtube.com/watch?v=yOAwvRmVIyo) |
 | 人気な映画を知りたいな | これを観ているニャン<br>📽[イミテーション・ゲーム](https://www.themoviedb.org/movie/205596-the-imitation-game?language=ja)<br>第2次世界大戦下の1939年イギリス... |
 | 映画を観たいな | これを観ているニャン<br>[イミテーション・ゲーム](https://filmarks.com/movies/57847)
+| ゲームをやろうかな | ここを見ているニャン<br>[Metacritic](https://www.metacritic.com/game) |
 | 天気どうなるかな | ここを見ているニャン<br>[Google天気](https://www.google.co.jp/search?q=天気) |
 | おやすみー | [sticker](https://developers.line.biz/media/messaging-api/sticker_list.pdf) |
 
