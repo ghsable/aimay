@@ -86,8 +86,12 @@ def get_replymessage(push_text):
     elif ('おんがく' in push_text) or ('うた' in push_text) or ('きょく' in push_text) or ('音' in push_text) or ('歌' in push_text) or ('曲' in push_text):
         reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
-    # TMDb
+    # Filmarks
     elif ('映画' in push_text):
+        reply_text = 'https://filmarks.com/movies/' + random.randint(1,92440)
+        reply_type = 'text'
+    # TMDb
+    elif ('人気の映画' in push_text):
         tmdb          = TMDb()
         tmdb.api_key  = TMDB_API_KEY
         tmdb.language = 'ja'
