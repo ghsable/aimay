@@ -108,9 +108,9 @@ def get_replymessage(push_text):
         # TMDb
         if (movie_switch == 0):
             tmdb_index = random.randint(2,88956)
-            while (tmdb_index in {12830}): #Blacklist
+            while (tmdb_index in {12830, 84039}): #Blacklist
                 tmdb_index = tmdb_index + 1
-            reply_text = 'https://www.themoviedb.org/movie/' + str(tmdb_index) + '?language=ja'
+            reply_text = 'これを観ているニャン\n' + 'https://www.themoviedb.org/movie/' + str(tmdb_index) + '?language=ja'
         # Filmarks
         else:
             filmarks_index = random.randint(1,92440)
