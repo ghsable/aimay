@@ -88,8 +88,9 @@ def get_replymessage(push_text):
         reply_type = 'text'
     # Filmarks
     elif ('映画' in push_text):
-        filmarks_index = random.randint(1,92440)
-        while filmarks_index in {67079}: #Blacklist
+        #filmarks_index = random.randint(1,92440)
+        filmarks_index = 67079
+        while (filmarks_index in {67079}): #Blacklist
             filmarks_index = filmarks_index + 1
         reply_text = 'これを観ているニャン\n' + 'https://filmarks.com/movies/' + str(filmarks_index)
         reply_type = 'text'
