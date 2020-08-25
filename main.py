@@ -87,7 +87,7 @@ def get_replymessage(push_text):
         reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
     # TMDb
-    elif ('人気の映画' in push_text):
+    elif ('人気の映画' in push_text) or ('人気な映画' in push_text) or ('人気映画' in push_text):
         tmdb          = TMDb()
         tmdb.api_key  = TMDB_API_KEY
         tmdb.language = 'ja'
@@ -103,7 +103,7 @@ def get_replymessage(push_text):
         reply_text = 'これを観ているニャン\n' + popular_titles[popular_index] + '\n' + popular_overviews[popular_index]
         reply_type = 'text'
     # Filmarks
-    elif ('映画' in push_text):
+    elif ('えいが' in push_text) or ('映画' in push_text):
         filmarks_index = random.randint(1,92440)
         while (filmarks_index in {58803, 67079, 77193}): #Blacklist
             filmarks_index = filmarks_index + 1
