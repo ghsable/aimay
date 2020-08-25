@@ -86,13 +86,6 @@ def get_replymessage(push_text):
     elif ('おんがく' in push_text) or ('うた' in push_text) or ('きょく' in push_text) or ('音' in push_text) or ('歌' in push_text) or ('曲' in push_text):
         reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
-    # Filmarks
-    elif ('映画' in push_text):
-        filmarks_index = random.randint(1,92440)
-        while (filmarks_index in {67079, 77193}): #Blacklist
-            filmarks_index = filmarks_index + 1
-        reply_text = 'これを観ているニャン\n' + 'https://filmarks.com/movies/' + str(filmarks_index)
-        reply_type = 'text'
     # TMDb
     elif ('人気の映画' in push_text):
         tmdb          = TMDb()
@@ -108,6 +101,13 @@ def get_replymessage(push_text):
             popular_overviews.append(p.overview)
         popular_index = random.randint(0,(len(popular_titles) - 1))
         reply_text = 'これを観ているニャン\n' + popular_titles[popular_index] + '\n' + popular_overviews[popular_index]
+        reply_type = 'text'
+    # Filmarks
+    elif ('映画' in push_text):
+        filmarks_index = random.randint(1,92440)
+        while (filmarks_index in {58803, 67079, 77193}): #Blacklist
+            filmarks_index = filmarks_index + 1
+        reply_text = 'これを観ているニャン\n' + 'https://filmarks.com/movies/' + str(filmarks_index)
         reply_type = 'text'
     elif ('てんき' in push_text) or ('きおん' in push_text) or ('天気' in push_text) or ('気温' in push_text) or ('降水' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.google.co.jp/search?q=天気'
