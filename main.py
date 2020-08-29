@@ -15,13 +15,11 @@ app = Flask(__name__)
 import os                         # Heroku
 import random                     # GitHub
 import pya3rt                     # A3RT/TalkAPI:requirements.txt
-from tmdbv3api import TMDb, Movie # TMDb:requirements.txt
 
 # get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET       = os.environ["LINE_CHANNEL_SECRET"]
 A3RT_TALKAPI_APIKEY       = os.environ["A3RT_TALKAPI_APIKEY"] # A3RT/TalkAPI
-TMDB_API_KEY              = os.environ["TMDB_API_KEY"]        # TMDb
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler      = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -86,37 +84,9 @@ def get_replymessage(push_text):
     elif ('おんがく' in push_text) or ('うた' in push_text) or ('きょく' in push_text) or ('音' in push_text) or ('歌' in push_text) or ('曲' in push_text):
         reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
-    # TMDb
-    elif ('人気の映画' in push_text) or ('人気な映画' in push_text) or ('人気映画' in push_text):
-        tmdb          = TMDb()
-        tmdb.api_key  = TMDB_API_KEY
-        tmdb.language = 'ja'
-        tmdb.debug    = True
-        movie         = Movie()
-        popular       = movie.popular()
-        popular_titles    = []
-        popular_overviews = []
-        for p in popular:
-            popular_titles.append('📽' + p.title)
-            popular_overviews.append(p.overview)
-        popular_index = random.randint(0,(len(popular_titles) - 1))
-        reply_text = 'これを観ているニャン\n' + popular_titles[popular_index] + '\n' + popular_overviews[popular_index]
-        reply_type = 'text'
-    # TMDb and Filmarks
+    # Filmarks
     elif ('えいが' in push_text) or ('映画' in push_text):
-        movie_switch = random.randint(0,1)
-        # TMDb
-        if (movie_switch == 0):
-            tmdb_index = random.randint(2,88956)
-            while (tmdb_index in {8250, 12830, 84039, 88571}): #Blacklist
-                tmdb_index = tmdb_index + 1
-            reply_text = 'これを観ているニャン\n' + 'https://www.themoviedb.org/movie/' + str(tmdb_index) + '?language=ja'
-        # Filmarks
-        else:
-            filmarks_index = random.randint(1,92440)
-            while (filmarks_index in {58803, 67079, 77193}): #Blacklist
-                filmarks_index = filmarks_index + 1
-            reply_text = 'これを観ているニャン\n' + 'https://filmarks.com/movies/' + str(filmarks_index)
+        reply_text = 'これを観ているニャン\n' + return_data('MOVIES.txt')
         reply_type = 'text'
     elif ('げーむ' in push_text) or ('ゲーム' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.metacritic.com/game'
