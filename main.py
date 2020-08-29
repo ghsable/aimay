@@ -86,7 +86,7 @@ def get_replymessage(push_text):
         reply_type = 'text'
     # Filmarks
     elif ('えいが' in push_text) or ('映画' in push_text):
-        reply_text = 'これを観ているニャン\n' + return_data('MOVIES.txt')
+        reply_text = 'これを観ているニャン\n' + return_data('MOVIE.txt')
         reply_type = 'text'
     elif ('げーむ' in push_text) or ('ゲーム' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.metacritic.com/game'
