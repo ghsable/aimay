@@ -88,6 +88,9 @@ def get_replymessage(push_text):
     elif ('えいが' in push_text) or ('映画' in push_text):
         reply_text = 'これを観ているニャン\n' + return_data('MOVIE.txt')
         reply_type = 'text'
+    elif ('どらま' in push_text) or ('ドラマ' in push_text):
+        reply_text = 'ここを見ているニャン\n' + 'https://filmarks.com/list-drama/trend\n' + 'https://www.themoviedb.org/tv?language=ja'
+        reply_type = 'text'
     elif ('げーむ' in push_text) or ('ゲーム' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://www.metacritic.com/game'
         reply_type = 'text'
