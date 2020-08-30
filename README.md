@@ -1,5 +1,13 @@
-# TEST
-This is LINE Bot <- (🐈 x 🤖 x 🧠)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ghsable/test/master/README/may.png" width="150" height="150" align="center" alt="may">
+  <h2 align="center">LINE Bot AI May</h2>
+  <p align="center">🐈 x 🤖 x 🧠</p>
+</p>
+  <p align="center">
+    <a href="https://github.com/ghsable/test/actions">
+      <img alt="Test Passing" src="https://github.com/ghsable/test/workflows/main/badge.svg">
+    </a>
+  </p>
 
 ## Try it out!
 Use this Line QR code to add the Bot:  
