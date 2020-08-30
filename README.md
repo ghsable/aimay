@@ -33,7 +33,7 @@ Example:
 | おやすみー | [sticker](https://developers.line.biz/media/messaging-api/sticker_list.pdf) |
 
 ## Development
-* [LINE](https://line.me/ja/) x ([Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/test/blob/master/runtime.txt) + [modules](#modules)) x [GitHub](https://github.com/) x [Heroku](https://jp.heroku.com/) = (⋈MAY◍＞◡＜◍)。✧♡RIN♡
+* [LINE](https://line.me/ja/) x ([Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/test/blob/master/runtime.txt) + [modules](#modules)) x ([GitHub](https://github.com/) + [Actions](#actions)) x [Heroku](https://jp.heroku.com/) = (⋈MAY◍＞◡＜◍)。✧♡RIN♡
 
 ### modules
 
@@ -47,3 +47,9 @@ Example:
 | [Metacritic](https://www.metacritic.com/game)                    | -                                                      | -                                                                           | `-`                                                                     | `-`                                                  |
 | [Google](https://www.google.com/)                                | -                                                      | -                                                                           | `-`                                                                     | `-`                                                  |
 | [A3RT/TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/) | [pya3rt](https://pypi.org/project/pya3rt/)             | [nocotan/pya3rt](https://github.com/nocotan/pya3rt)                         | `1.1`                                                                   | `A3RT_TALKAPI_APIKEY`                                |
+
+### Actions
+| Marketplace/Actions                                                         | Version  | Environment variable                                    |
+| :---                                                                        | :---     | :---                                                    |
+| [Checkout](https://github.com/marketplace/actions/checkout)                 | `2.x.x`  | `-`                                                     |
+| [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku) | `3.4.6`  | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
