@@ -8,4 +8,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-cat ${1} | grep -e '4\..*点' -e '5\..*点' | cut -d, -f1 >MOVIE.txt
+cat ${1} | grep -e '3.8点' -e '3.9点' -e '4\..*点' -e '5\..*点' | cut -d, -f1 >MOVIE.txt
