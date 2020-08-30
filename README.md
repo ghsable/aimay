@@ -12,6 +12,7 @@
 ## Try it out!
 Use this Line QR code to add the Bot:  
 **OR CODE**
+**OR CODE**
 
 ## Usage
 * This Bot only supports 🗾[Japanese](https://en.wikipedia.org/wiki/Japanese_language)
