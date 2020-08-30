@@ -5,7 +5,7 @@
 </p>
   <p align="center">
     <a href="https://github.com/ghsable/test/actions">
-      <img alt="Test Passing" src="https://github.com/ghsable/test/workflows/main/badge.svg">
+      <img alt="Test Passing" src="https://github.com/ghsable/test/workflows/CI/badge.svg">
     </a>
   </p>
 
