@@ -5,7 +5,7 @@
 </p>
   <p align="center">
     <a href="https://github.com/ghsable/test/actions">
-      <img alt="CI Passing" src="https://github.com/ghsable/test/workflows/CI/badge.svg">
+      <img alt="Deploy Passing" src="https://github.com/ghsable/test/workflows/Deploy/badge.svg">
     </a>
   </p>
 
