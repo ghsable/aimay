@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/ghsable/test/master/README/may.png" width="150" height="150" align="center" alt="may">
   <h2 align="center">LINE Bot AI May</h2>
-  <p align="center">🐈 x 🤖 x 🧠</p>
+  <p align="center">🤖 -> 🐈 <- 🧠</p>
 </p>
   <p align="center">
     <a href="https://github.com/ghsable/test/actions">
