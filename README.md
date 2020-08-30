@@ -37,7 +37,7 @@ Example:
 
 ### modules
 
-| Homepage                                                         | PyPI                                                   | GitHub                                                                      | [Version](https://github.com/ghsable/test/blob/master/requirements.txt) | Environment variable(Heroku/Config Vars)             |
+| Homepage                                                         | PyPI                                                   | GitHub                                                                      | [Version](https://github.com/ghsable/test/blob/master/requirements.txt) | Environment variable(Heroku)                         |
 | :---                                                             | :---                                                   | :---                                                                        | :---                                                                    | :---                                                 |
 | [LINE Developers](https://developers.line.biz/ja/)               | [line-bot-sdk](https://pypi.org/project/line-bot-sdk/) | [line/line-bot-sdk-python](https://github.com/line/line-bot-sdk-python)     | `1.16.0`                                                                | `LINE_CHANNEL_ACCESS_TOKEN`<br>`LINE_CHANNEL_SECRET` |
 | [Flask](https://flask.palletsprojects.com/en/1.1.x/)             | [Flask](https://pypi.org/project/Flask/)               | [pallets/flask](https://github.com/pallets/flask)                           | `1.1.2`                                                                 | `-`                                                  |
@@ -49,7 +49,7 @@ Example:
 | [A3RT/TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/) | [pya3rt](https://pypi.org/project/pya3rt/)             | [nocotan/pya3rt](https://github.com/nocotan/pya3rt)                         | `1.1`                                                                   | `A3RT_TALKAPI_APIKEY`                                |
 
 ### Actions
-| Marketplace/Actions                                                         | Version  | Environment variable(GitHub/Secrets)                    |
+| Marketplace/Actions                                                         | Version  | Environment variable(GitHub)                            |
 | :---                                                                        | :---     | :---                                                    |
 | [Checkout](https://github.com/marketplace/actions/checkout)                 | `2.x.x`  | `-`                                                     |
 | [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku) | `3.4.6`  | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
