@@ -7,6 +7,12 @@
     <a href="https://github.com/ghsable/aimay/actions">
       <img alt="Deploy Passing" src="https://github.com/ghsable/aimay/workflows/Deploy/badge.svg">
     </a>
+    <a href="https://github.com/ghsable/aimay/issues">
+      <img alt="License" src="https://img.shields.io/github/issues/ghsable/aimay?color=0088ff">
+    </a>
+    <a href="https://github.com/ghsable/aimay/blob/master/LICENSE">
+      <img alt="License" src="https://img.shields.io/github/license/ghsable/aimay">
+    </a>
   </p>
 
 ## Try it out!
