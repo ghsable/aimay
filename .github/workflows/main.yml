@@ -2,18 +2,22 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: codecov/codecov-action@v1
-      - uses: akhileshns/heroku-deploy@v3.4.6
-        with:
-          token: ${{secrets.CODECOV_TOKEN}}
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
+    - uses: actions/checkout@v2
+
+    # AkhileshNS/heroku-deploy
+    # https://github.com/AkhileshNS/heroku-deploy
+    - name: Deploy to Heroku
+      uses: akhileshns/heroku-deploy@v3.4.6
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+        heroku_email: ${{secrets.HEROKU_EMAIL}}
