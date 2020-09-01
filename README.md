@@ -7,6 +7,9 @@
     <a href="https://github.com/ghsable/aimay/actions">
       <img alt="Deploy Passing" src="https://github.com/ghsable/aimay/workflows/Deploy/badge.svg">
     </a>
+    <a href="https://codecov.io/gh/ghsable/aimay">
+      <img alt="codecov" src="https://codecov.io/gh/ghsable/aimay/branch/master/graph/badge.svg">
+    </a>
     <a href="https://github.com/ghsable/aimay/issues">
       <img alt="License" src="https://img.shields.io/github/issues/ghsable/aimay?color=0088ff">
     </a>
