@@ -13,6 +13,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    # codecov/codecov-action
+    # https://github.com/codecov/codecov-action
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{secrets.CODECOV_TOKEN}}
+
     # AkhileshNS/heroku-deploy
     # https://github.com/AkhileshNS/heroku-deploy
     - name: Deploy to Heroku
