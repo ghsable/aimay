@@ -18,6 +18,14 @@ jobs:
     # https://github.com/actions/setup-python
     - name: Setup Python
       uses: actions/setup-python@v2
+      with:
+        python-version: 3.8.5
+
+    - name: Generate coverage report
+      run: |
+        pip install pytest
+        pip install pytest-cov
+        pytest --cov=./ --cov-report=xml
 
     # codecov/codecov-action
     # https://github.com/codecov/codecov-action
