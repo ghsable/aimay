@@ -13,9 +13,6 @@
     <a href="https://github.com/ghsable/aimay/issues">
       <img alt="License" src="https://img.shields.io/github/issues/ghsable/aimay?color=0088ff">
     </a>
-    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_shield" alt="FOSSA Status">
-      <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fghsable%2Faimay.svg?type=shield">
-    </a>
   </p>
   <p align="center">
     <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large" alt="FOSSA Status">
