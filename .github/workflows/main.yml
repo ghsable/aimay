@@ -25,7 +25,7 @@ jobs:
       run: |
         pip install pytest
         pip install pytest-cov
-        pytest test.py --cov=./ --cov-report=xml
+        pytest main.py --cov=./ --cov-report=xml
 
     # codecov/codecov-action
     # https://github.com/codecov/codecov-action
