@@ -23,7 +23,7 @@ jobs:
 
     - name: Generate coverage report
       run: |
-        pip install --user codecov
+        pip install codecov
         coverage run test_main.py
         codecov
 #        pip install pytest
