@@ -134,6 +134,10 @@ def talkapi_response(push_text):
     talkapi_response = talkapi_client.talk(push_text)
     return ((talkapi_response['results'])[0])['reply']
 
+# test_main.py
+def f():
+    return 3
+
 if __name__ == "__main__":
    # get port from Heroku
    port = int(os.getenv("PORT"))
