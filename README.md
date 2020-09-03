@@ -14,11 +14,11 @@
       <img alt="GitHub Issues" src="https://img.shields.io/github/issues/ghsable/aimay?color=0088ff">
     </a>
     <a href="https://github.com/ghsable/aimay/pulls">
-      <img alt="GitHub Pull requests" src="https://img.shields.io/github/issues-pr/ghsable/aimay?color=0088ff" />
+      <img alt="GitHub Pull requests" src="https://img.shields.io/github/issues-pr/ghsable/aimay?color=0088ff">
     </a>
   </p>
   <p align="center">
-    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large">
+    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large" target="_blank" rel="noopener noreferrer">
       <img alt="FOSSA Status" src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fghsable%2Faimay.svg?type=large">
     </a>
   </p>
