@@ -23,6 +23,7 @@ jobs:
 
     - name: Generate coverage report
       run: |
+        pip install line-bot-sdk Flask pya3rt
         pip install codecov
         coverage run test_main.py
         codecov
