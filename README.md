@@ -18,7 +18,7 @@
     </a>
   </p>
   <p align="center">
-    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large" target="_blank" rel="noopener">
+    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large">
       <img alt="FOSSA Status" src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fghsable%2Faimay.svg?type=large">
     </a>
   </p>
