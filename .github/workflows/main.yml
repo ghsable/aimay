@@ -24,6 +24,8 @@ jobs:
     - name: Generate coverage report
       run: |
         export LINE_CHANNEL_ACCESS_TOKEN=1111
+        export LINE_CHANNEL_SECRET=1111
+        export A3RT_TALKAPI_APIKEY=1111
         pip install line-bot-sdk Flask pya3rt
         pip install codecov
         coverage run test_main.py
