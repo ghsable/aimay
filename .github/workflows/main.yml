@@ -23,6 +23,7 @@ jobs:
 
     - name: Generate coverage report
       run: |
+        export PORT='8080'
         export LINE_CHANNEL_ACCESS_TOKEN=${{secrets.LINE_CHANNEL_ACCESS_TOKEN}}
         export LINE_CHANNEL_SECRET=${{secrets.LINE_CHANNEL_SECRET}}
         export A3RT_TALKAPI_APIKEY=${{secrets.A3RT_TALKAPI_APIKEY}}
