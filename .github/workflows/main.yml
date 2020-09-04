@@ -23,9 +23,9 @@ jobs:
 
     - name: Generate coverage report
       run: |
-        export LINE_CHANNEL_ACCESS_TOKEN=1111
-        export LINE_CHANNEL_SECRET=1111
-        export A3RT_TALKAPI_APIKEY=1111
+        export LINE_CHANNEL_ACCESS_TOKEN=${{secrets.LINE_CHANNEL_ACCESS_TOKEN}}
+        export LINE_CHANNEL_SECRET=${{secrets.LINE_CHANNEL_SECRET}}
+        export A3RT_TALKAPI_APIKEY=${{secrets.A3RT_TALKAPI_APIKEY}}
         pip install line-bot-sdk Flask pya3rt
         pip install codecov
         coverage run test_main.py
@@ -44,9 +44,9 @@ jobs:
 
     # AkhileshNS/heroku-deploy
     # https://github.com/AkhileshNS/heroku-deploy
-    - name: Deploy to Heroku
-      uses: akhileshns/heroku-deploy@v3.4.6
-      with:
-        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-        heroku_email: ${{secrets.HEROKU_EMAIL}}
+#    - name: Deploy to Heroku
+#      uses: akhileshns/heroku-deploy@v3.4.6
+#      with:
+#        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+#        heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+#        heroku_email: ${{secrets.HEROKU_EMAIL}}
