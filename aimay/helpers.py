@@ -1,3 +1,7 @@
+import os      # Heroku
+import random  # GitHub
+import pya3rt  # A3RT/TalkAPI:requirements.txt
+
 # return reply message(from data/*.txt)
 def return_data(filename):
     filepath = os.getcwd() + '/data/' + filename
