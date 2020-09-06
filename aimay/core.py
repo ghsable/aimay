@@ -12,7 +12,7 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-from . import helpers
+import helpers
 
 import os      # Heroku
 import random  # GitHub
