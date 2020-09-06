@@ -29,7 +29,7 @@ jobs:
         export A3RT_TALKAPI_APIKEY=${{secrets.A3RT_TALKAPI_APIKEY}}
         pip install line-bot-sdk Flask pya3rt
         pip install codecov
-        coverage run -m unittest tests/test_core.py
+        coverage run -m unittest tests
         codecov
 #        pip install pytest
 #        pip install pytest-cov

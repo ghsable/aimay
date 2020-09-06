@@ -12,9 +12,11 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-import os                         # Heroku
-import random                     # GitHub
-import pya3rt                     # A3RT/TalkAPI:requirements.txt
+from . import helpers
+
+import os      # Heroku
+import random  # GitHub
+import pya3rt  # A3RT/TalkAPI:requirements.txt
 
 # get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
@@ -120,13 +122,6 @@ def get_replymessage(push_text):
         reply_text = talkapi_response(push_text) + 'ニャン'
         reply_type = 'text'
     return reply_text, reply_type, reply_package, reply_sticker
-
-# return reply message(from data/*.txt)
-def return_data(filename):
-    filepath = os.getcwd() + '/data/' + filename
-    with open(filepath) as datafile:
-        datalines = datafile.readlines()
-    return datalines[random.randint(0,(len(datalines) - 1))].strip()
 
 # return reply message(A3RT/TalkAPI)
 def talkapi_response(push_text):
