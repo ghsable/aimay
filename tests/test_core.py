@@ -4,10 +4,10 @@ from .context import aimay
 
 import unittest
 
-class TestMain(unittest.TestCase):
+class TestCore(unittest.TestCase):
 
   def test_f(self):
-    self.assertEqual(3, main.f())
+    self.assertEqual(3, aimay.f())
 
 if __name__ == "__main__":
     unittest.main()
