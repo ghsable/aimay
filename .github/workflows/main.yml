@@ -29,7 +29,7 @@ jobs:
         export A3RT_TALKAPI_APIKEY=${{secrets.A3RT_TALKAPI_APIKEY}}
         pip install line-bot-sdk Flask pya3rt
         pip install codecov
-        coverage run test_main.py
+        coverage run tests/test_main.py
         codecov
 #        pip install pytest
 #        pip install pytest-cov
@@ -45,9 +45,9 @@ jobs:
 
     # AkhileshNS/heroku-deploy
     # https://github.com/AkhileshNS/heroku-deploy
-#    - name: Deploy to Heroku
-#      uses: akhileshns/heroku-deploy@v3.4.6
-#      with:
-#        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-#        heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-#        heroku_email: ${{secrets.HEROKU_EMAIL}}
+    - name: Deploy to Heroku
+      uses: akhileshns/heroku-deploy@v3.4.6
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+        heroku_email: ${{secrets.HEROKU_EMAIL}}
