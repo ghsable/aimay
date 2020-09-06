@@ -1,8 +1,8 @@
 import unittest
-import main
- 
+from aimay import main
+
 class TestMain(unittest.TestCase):
- 
+
   def test_f(self):
     self.assertEqual(3, main.f())
 
