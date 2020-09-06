@@ -1,5 +1,5 @@
 import unittest
-from aimay import main
+import aimay
 
 class TestMain(unittest.TestCase):
 
