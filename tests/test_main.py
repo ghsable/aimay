@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
+
+from .context import aimay
+
 import unittest
-import aimay
 
 class TestMain(unittest.TestCase):
 
