@@ -29,7 +29,7 @@ jobs:
         python -m pip install codecov
         # option .coveragerc
         # create .coverage
-        python -m coverage run -m unittest tests/test_*.py
+        python -m coverage run -m unittest discover
         # create coverage.xml
         python -m coverage xml
 

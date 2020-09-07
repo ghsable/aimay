@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from . import core
 
 from flask import Flask, request, abort
