@@ -1,5 +1,4 @@
 from . import core
-#from . import helpers
 
 from flask import Flask, request, abort
 
@@ -15,14 +14,11 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-import os      # Heroku
-import random  # GitHub
-#import pya3rt  # A3RT/TalkAPI:requirements.txt
+import os
 
 # get environment variables from Heroku(Settings/Config Variables)
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET       = os.environ["LINE_CHANNEL_SECRET"]
-#A3RT_TALKAPI_APIKEY       = os.environ["A3RT_TALKAPI_APIKEY"] # A3RT/TalkAPI
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler      = WebhookHandler(LINE_CHANNEL_SECRET)
@@ -68,19 +64,6 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='エラーみたいだニャン')
         )
-
-# return reply message(from data/*.txt)
-#def return_data(filename):
-#    filepath = os.path.join(os.getcwd(), 'aimay/data', filename)
-#    with open(filepath) as datafile:
-#        datalines = datafile.readlines()
-#    return datalines[random.randint(0,(len(datalines) - 1))].strip()
-
-# return reply message(A3RT/TalkAPI)
-#def talkapi_response(push_text):
-#    talkapi_client   = pya3rt.TalkClient(A3RT_TALKAPI_APIKEY)
-#    talkapi_response = talkapi_client.talk(push_text)
-#    return ((talkapi_response['results'])[0])['reply']
 
 # test_main.py
 def f():
