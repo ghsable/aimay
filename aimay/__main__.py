@@ -123,7 +123,6 @@ def get_replymessage(push_text):
 
 # return reply message(from data/*.txt)
 def return_data(filename):
-    #filepath = os.getcwd() + '/data/' + filename
     filepath = os.getcwd() + '/aimay/data/' + filename
     with open(filepath) as datafile:
         datalines = datafile.readlines()
