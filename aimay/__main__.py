@@ -119,7 +119,7 @@ def get_replymessage(push_text):
         # -----
     # A3RT/TalkAPI
     else:
-        reply_text = talkapi_response(push_text) + 'ニャン'
+        reply_text = helpers.talkapi_response(push_text) + 'ニャン'
         reply_type = 'text'
     return reply_text, reply_type, reply_package, reply_sticker
 
@@ -131,10 +131,10 @@ def get_replymessage(push_text):
 #    return datalines[random.randint(0,(len(datalines) - 1))].strip()
 
 # return reply message(A3RT/TalkAPI)
-def talkapi_response(push_text):
-    talkapi_client   = pya3rt.TalkClient(A3RT_TALKAPI_APIKEY)
-    talkapi_response = talkapi_client.talk(push_text)
-    return ((talkapi_response['results'])[0])['reply']
+#def talkapi_response(push_text):
+#    talkapi_client   = pya3rt.TalkClient(A3RT_TALKAPI_APIKEY)
+#    talkapi_response = talkapi_client.talk(push_text)
+#    return ((talkapi_response['results'])[0])['reply']
 
 # test_main.py
 def f():
