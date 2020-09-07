@@ -2,10 +2,6 @@ from . import helpers
 
 import random
 
-# test_main.py
-def f():
-    return 3
-
 # return reply message and type and index
 def get_replymessage(push_text):
     reply_text, reply_type, reply_package, reply_sticker = '', '', '', ''
