@@ -65,10 +65,6 @@ def handle_message(event):
             TextSendMessage(text='エラーみたいだニャン')
         )
 
-# test_main.py
-def f():
-    return 3
-
 if __name__ == "__main__":
    # get port from Heroku
    port = int(os.getenv("PORT"))
