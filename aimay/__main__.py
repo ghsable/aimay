@@ -76,17 +76,17 @@ def get_replymessage(push_text):
         reply_text = push_text + 'ニャン'
         reply_type = 'text'
     elif ('ちゅーる' in push_text) or ('チュール' in push_text) or ('飲' in push_text) or ('食' in push_text):
-        reply_text = helpers.return_data('CIAO.txt')
+        reply_text = return_data('CIAO.txt')
         reply_type = 'text'
     elif ('りんりん' in push_text) or ('りんちゃん' in push_text) or ('りんたろう' in push_text) or ('凛太郎' in push_text):
-        reply_text = helpers.return_data('RIN.txt')
+        reply_text = return_data('RIN.txt')
         reply_type = 'text'
     elif ('おんがく' in push_text) or ('うた' in push_text) or ('きょく' in push_text) or ('音' in push_text) or ('歌' in push_text) or ('曲' in push_text):
-        reply_text = 'これを聴いているニャン\n' + helpers.return_data('MUSIC.txt')
+        reply_text = 'これを聴いているニャン\n' + return_data('MUSIC.txt')
         reply_type = 'text'
     # Filmarks
     elif ('えいが' in push_text) or ('映画' in push_text):
-        reply_text = 'これを観ているニャン\n' + helpers.return_data('MOVIE.txt')
+        reply_text = 'これを観ているニャン\n' + return_data('MOVIE.txt')
         reply_type = 'text'
     elif ('どらま' in push_text) or ('ドラマ' in push_text):
         reply_text = 'ここを見ているニャン\n' + 'https://filmarks.com/list-drama/trend\n' + 'https://www.themoviedb.org/tv?language=ja'
