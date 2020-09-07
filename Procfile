@@ -1,1 +1,1 @@
-web: python -m aimay
+web: python aimay
