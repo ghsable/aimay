@@ -1,0 +1,9 @@
+[run]
+source = .
+omit = *tests*
+       *__init__*
+       *__main__*
+
+[report]
+show_missing = False
+skip_covered = False

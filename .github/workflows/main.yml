@@ -23,21 +23,26 @@ jobs:
 
     - name: Generate coverage report
       run: |
-#        export PORT='8080'
-#        export LINE_CHANNEL_ACCESS_TOKEN=${{secrets.LINE_CHANNEL_ACCESS_TOKEN}}
-#        export LINE_CHANNEL_SECRET=${{secrets.LINE_CHANNEL_SECRET}}
-#        export A3RT_TALKAPI_APIKEY=${{secrets.A3RT_TALKAPI_APIKEY}}
-#        python -m pip install -r requirements.txt
-#        python -m pip install codecov
-#        python -m coverage run -m unittest tests/test_core.py
-#        codecov
+        export A3RT_TALKAPI_APIKEY=${{secrets.A3RT_TALKAPI_APIKEY}}
+        python -m pip install -r requirements.txt
+        # command coverage,codecov
+        python -m pip install codecov
+        # option .coveragerc
+        # create .coverage
+        python -m coverage run -m unittest tests/test_*.py
+        # create coverage.xml
+        python -m coverage xml
 
     # codecov/codecov-action
     # https://github.com/codecov/codecov-action
-#    - name: Upload coverage to Codecov
-#      uses: codecov/codecov-action@v1
-#      with:
-#        token: ${{secrets.CODECOV_TOKEN}}
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{secrets.CODECOV_TOKEN}}
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: true
     # -----
 
     # AkhileshNS/heroku-deploy
