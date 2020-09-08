@@ -11,7 +11,7 @@ class TestCore(unittest.TestCase):
     self.assertEqual(('おうむ返しニャン', 'text', '', ''), reply_message)
     reply_message = aimay.get_replymessage('ちゅーる')
     self.assertIsNotNone(reply_message[0])
-    #self.assertEqual('text', reply_message[1])
+    self.assertEqual('text', reply_message[1])
     #self.assertIsNotNone(reply_message[2])
     #self.assertIsNotNone(reply_message[3])
 
