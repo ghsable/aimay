@@ -5,13 +5,11 @@ from . import helpers
 # return reply message and type and index
 import random
 def get_replymessage(push_text):
-
     reply_text, reply_type, reply_package, reply_sticker = '', '', '', ''
     suffix = 'ニャン'
-
     if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text) or ('🦜' in push_text):
-        #reply_text = push_text + 'ニャン'
-        reply_text = ''.join(push_text, suffix)
+        reply_text = push_text + 'ニャン'
+        #reply_text = ''.join(push_text, suffix)
         reply_type = 'text'
     elif ('ちゅーる' in push_text) or ('チュール' in push_text) or ('飲' in push_text) or ('食' in push_text):
         reply_text = helpers.return_data('CIAO.txt')
