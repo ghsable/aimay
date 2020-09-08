@@ -12,7 +12,7 @@ def return_data(filename):
 # return reply message(A3RT/TalkAPI)
 import pya3rt
 def talkapi_response(push_text):
-    talkapi_client   = pya3rt.TalkClient(os.environ.get('A3RT_TALKAPI_APIKEY'))
+    talkapi_client = pya3rt.TalkClient(os.environ.get('A3RT_TALKAPI_APIKEY'))
     talkapi_response = talkapi_client.talk(push_text)
     return ((talkapi_response['results'])[0])['reply']
 
