@@ -5,7 +5,8 @@ from . import helpers
 # return reply message and type and index
 import random
 def get_replymessage(push_text):
-    reply_text, reply_type, reply_package, reply_sticker = '', '', '', ''
+    #reply_text, reply_type, reply_package, reply_sticker = '', '', '', ''
+    reply_text, reply_type, reply_package, reply_sticker = None, None, None, None
     if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text) or ('🦜' in push_text):
         reply_text = push_text + 'ニャン'
         reply_type = 'text'
