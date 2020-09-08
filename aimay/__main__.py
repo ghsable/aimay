@@ -2,6 +2,8 @@
 
 from . import core
 
+# line/line-bot-sdk-python
+# https://github.com/line/line-bot-sdk-python
 from flask import Flask, request, abort
 
 from linebot import (
@@ -16,14 +18,10 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-import os
-
 # get environment variables from Heroku(Settings/Config Variables)
-LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
-LINE_CHANNEL_SECRET       = os.environ["LINE_CHANNEL_SECRET"]
-
-line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
-handler      = WebhookHandler(LINE_CHANNEL_SECRET)
+import os
+line_bot_api = LineBotApi(os.environ.get('LINE_CHANNEL_ACCESS_TOKEN'))
+handler = WebhookHandler(os.environ.get('LINE_CHANNEL_SECRET'))
 
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -54,18 +52,15 @@ def handle_message(event):
     if (reply_type == 'text'):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text=reply_text)
-        )
+            TextSendMessage(text=reply_text))
     elif (reply_type == 'sticker'):
         line_bot_api.reply_message(
             event.reply_token,
-            StickerSendMessage(package_id=reply_package,sticker_id=reply_sticker)
-        )
+            StickerSendMessage(package_id=reply_package,sticker_id=reply_sticker))
     else:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='エラーみたいだニャン')
-        )
+            TextSendMessage(text='エラーみたいだニャン'))
 
 if __name__ == "__main__":
    # get port from Heroku
