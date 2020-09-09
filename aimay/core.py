@@ -31,22 +31,7 @@ def get_replymessage(push_text):
         reply_type = 'text'
     elif ('おやすみ' in push_text):
         reply_type = 'sticker'
-        # --- LINE Available sticker list
-        #     https://developers.line.biz/media/messaging-api/sticker_list.pdf
-        sticker_switch = random.randint(0,2)
-        if (sticker_switch == 0):
-            # Brown, Cony & Sally
-            reply_package = '11537'
-            reply_sticker = random.choice(['52002753', '52002757', '52002764', '52002771'])
-        elif (sticker_switch == 1):
-            # CHOCO & Friends
-            reply_package = '11538'
-            reply_sticker = random.choice(['51626513'])
-        else:
-            # UNIVERSTAR BT21
-            reply_package = '11539'
-            reply_sticker = random.choice(['52114120', '52114121'])
-        # ---
+        reply_package, reply_sticker = helpers.return_sticker(0)
     else:
         # A3RT/TalkAPI
         reply_text = helpers.talkapi_response(push_text) + 'ニャン'
