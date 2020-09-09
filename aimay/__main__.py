@@ -61,6 +61,12 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='error'))
 
+@handler.add(FollowEvent)
+def handle_follow(event):
+   line_bot_api.reply_message(
+       event.reply_token,
+       TextSendMessage(text='友達追加ありがとうニャン'))
+
 if __name__ == "__main__":
    # get port from Heroku
    port = int(os.environ.get('PORT'))
