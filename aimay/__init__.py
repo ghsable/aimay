@@ -1,1 +1,1 @@
-from .core import get_replymessage
+from .core import get_reply
