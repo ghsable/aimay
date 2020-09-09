@@ -13,8 +13,7 @@ def return_data(filename):
 # - LINE Available sticker list
 #   https://developers.line.biz/media/messaging-api/sticker_list.pdf
 def return_sticker(index):
-    # sleep
-    if (index == 0):
+    if (index == 'sleep'):
         sticker_switch = random.randint(0,2)
         if (sticker_switch == 0):
             # Brown, Cony & Sally
@@ -28,11 +27,9 @@ def return_sticker(index):
             # UNIVERSTAR BT21
             reply_package = '11539'
             reply_sticker = random.choice(['52114120', '52114121'])
-    # variety
-    elif (index == 1):
+    elif (index == 'variety'):
         reply_package = '11537'
         reply_sticker = '52002735'
-    # other
     else:
         reply_package = '11537'
         reply_sticker = '52002734'
