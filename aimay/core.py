@@ -32,6 +32,11 @@ def get_replymessage(push_text):
     elif ('おやすみ' in push_text):
         reply_type = 'sticker'
         reply_package, reply_sticker = helpers.return_sticker('sleep')
+    elif ('debug_sticker' in push_text):
+        reply_type = 'sticker'
+        reply_package, reply_sticker = helpers.return_sticker(push_text)
+    elif ('debug_message' in push_text):
+        reply_type = push_text
     else:
         reply_text = helpers.talkapi_response(push_text) + 'ニャン'
         reply_type = 'text'
