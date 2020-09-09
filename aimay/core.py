@@ -31,7 +31,7 @@ def get_replymessage(push_text):
         reply_type = 'text'
     elif ('おやすみ' in push_text):
         reply_type = 'sticker'
-        reply_package, reply_sticker = helpers.return_sticker(1)
+        reply_package, reply_sticker = helpers.return_sticker('sleep')
     else:
         # A3RT/TalkAPI
         reply_text = helpers.talkapi_response(push_text) + 'ニャン'
