@@ -7,7 +7,7 @@ import unittest
 class TestCore(unittest.TestCase):
 
   def test_get_replymessage(self):
-    reply_message = aimay.get_replymessage('おうむがえし！')
+    reply_message = aimay.get_replymessage('text', 'おうむがえし！')
     self.assertEqual(('text', 'おうむがえし！ニャン', None, None), reply_message)
 
     reply_message = aimay.get_replymessage('ちゅーるを買ったよ')
@@ -16,25 +16,25 @@ class TestCore(unittest.TestCase):
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('りんりん(相棒)の調子はどう？')
+    reply_message = aimay.get_replymessage('text', 'りんりん(相棒)の調子はどう？')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('いい音楽ないかな')
+    reply_message = aimay.get_replymessage('text', 'いい音楽ないかな')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('映画を観たいな')
+    reply_message = aimay.get_replymessage('text', '映画を観たいな')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('面白いドラマあるかな')
+    reply_message = aimay.get_replymessage('text', '面白いドラマあるかな')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
@@ -46,32 +46,32 @@ class TestCore(unittest.TestCase):
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('天気どうなるかな')
+    reply_message = aimay.get_replymessage('text', '天気どうなるかな')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
     for i in range(10):
-        reply_message = aimay.get_replymessage('おやすみー')
+        reply_message = aimay.get_replymessage('text', 'おやすみー')
         self.assertEqual('sticker', reply_message[0])
         self.assertIsNone(reply_message[1])
         self.assertIsNotNone(reply_message[2])
         self.assertIsNotNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('debug_sticker')
+    reply_message = aimay.get_replymessage('text', 'debug_sticker')
     self.assertEqual('sticker', reply_message[0])
     self.assertIsNone(reply_message[1])
     self.assertIsNotNone(reply_message[2])
     self.assertIsNotNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('debug_message')
+    reply_message = aimay.get_replymessage('text', 'debug_message')
     self.assertIsNotNone(reply_message[0])
     self.assertIsNone(reply_message[1])
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('あれ')
+    reply_message = aimay.get_replymessage('text', 'あれ')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
