@@ -47,7 +47,7 @@ def handle_message(event):
     push_type = 'text'
     push_text = event.message.text
     # get reply message and type
-    reply_text, reply_type, reply_package, reply_sticker = core.get_replymessage(push_type, push_text)
+    reply_type, reply_text, reply_package, reply_sticker = core.get_replymessage(push_type, push_text)
     # reply
     if (reply_type == 'text'):
         line_bot_api.reply_message(
@@ -66,7 +66,7 @@ def handle_message(event):
 def handle_message(event):
     push_type = 'sticker'
     push_text = None
-    reply_text, reply_type, reply_package, reply_sticker = core.get_replymessage(push_type, push_text)
+    reply_type, reply_text, reply_package, reply_sticker = core.get_replymessage(push_type, push_text)
     line_bot_api.reply_message(
         event.reply_token,
         StickerSendMessage(package_id=reply_package,sticker_id=reply_sticker))
