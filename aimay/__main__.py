@@ -12,7 +12,9 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import (
-    MessageEvent, FollowEvent, TextMessage, TextSendMessage, StickerMessage, StickerSendMessage, ImageMessage, ImageSendMessage
+    MessageEvent, FollowEvent, 
+    TextMessage, StickerMessage, ImageMessage, 
+    TextSendMessage, StickerSendMessage, ImageSendMessage
 )
 
 app = Flask(__name__)
@@ -60,11 +62,17 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='error'))
 
+@handler.add(MessageEvent, message=StickerMessage)
+def handle_message(event):
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text='スタンプありがとうニャン'))
+
 @handler.add(FollowEvent)
 def handle_follow(event):
-   line_bot_api.reply_message(
-       event.reply_token,
-       TextSendMessage(text='友達追加ありがとうニャン'))
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text='友達追加ありがとうニャン'))
 
 if __name__ == "__main__":
    # get port from Heroku
