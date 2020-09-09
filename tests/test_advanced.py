@@ -52,7 +52,7 @@ class TestCore(unittest.TestCase):
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    for i in range(5):
+    for i in range(10):
         reply_message = aimay.get_replymessage('おやすみー')
         self.assertIsNone(reply_message[0])
         self.assertEqual('sticker', reply_message[1])
