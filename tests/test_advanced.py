@@ -67,7 +67,7 @@ class TestCore(unittest.TestCase):
 
     reply_message = aimay.get_replymessage('debug_message')
     self.assertIsNone(reply_message[0])
-    self.assertIsNotNone(reply_message[2])
+    self.assertIsNotNone(reply_message[])
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
