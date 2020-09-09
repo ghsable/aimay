@@ -3,7 +3,7 @@ from . import helpers
 
 # return reply message and type and index
 import random
-def get_replymessage(push_type, push_text):
+def get_reply(push_type, push_text):
     reply_type, reply_text, reply_package, reply_sticker = None, None, None, None
     if (push_type == 'text'):
         if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text) or ('🦜' in push_text):
