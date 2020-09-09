@@ -33,7 +33,6 @@ def get_replymessage(push_text):
         reply_type = 'sticker'
         reply_package, reply_sticker = helpers.return_sticker('sleep')
     else:
-        # A3RT/TalkAPI
         reply_text = helpers.talkapi_response(push_text) + 'ニャン'
         reply_type = 'text'
     return reply_text, reply_type, reply_package, reply_sticker
