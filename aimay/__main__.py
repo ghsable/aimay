@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from . import core
 
 # line/line-bot-sdk-python
