@@ -69,7 +69,7 @@ def handle_message(event):
     reply_text, reply_type, reply_package, reply_sticker = core.get_replymessage(push_type, push_text)
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text='スタンプありがとうニャン'))
+        StickerSendMessage(package_id=reply_package,sticker_id=reply_sticker))
 
 @handler.add(FollowEvent)
 def handle_follow(event):
