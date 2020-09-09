@@ -44,10 +44,10 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    # get push message
+    push_type = 'text'
     push_text = event.message.text
     # get reply message and type
-    reply_text, reply_type, reply_package, reply_sticker = core.get_replymessage(push_text)
+    reply_text, reply_type, reply_package, reply_sticker = core.get_replymessage(push_type, push_text)
     # reply
     if (reply_type == 'text'):
         line_bot_api.reply_message(
@@ -64,6 +64,9 @@ def handle_message(event):
 
 @handler.add(MessageEvent, message=StickerMessage)
 def handle_message(event):
+    push_type = 'sticker'
+    push_text = None
+    reply_text, reply_type, reply_package, reply_sticker = core.get_replymessage(push_type, push_text)
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text='スタンプありがとうニャン'))
