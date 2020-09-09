@@ -10,7 +10,7 @@ class TestCore(unittest.TestCase):
     reply_message = aimay.get_replymessage('text', 'おうむがえし！')
     self.assertEqual(('text', 'おうむがえし！ニャン', None, None), reply_message)
 
-    reply_message = aimay.get_replymessage('ちゅーるを買ったよ')
+    reply_message = aimay.get_replymessage('text', 'ちゅーるを買ったよ')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
@@ -40,7 +40,7 @@ class TestCore(unittest.TestCase):
     self.assertIsNone(reply_message[2])
     self.assertIsNone(reply_message[3])
 
-    reply_message = aimay.get_replymessage('ゲームをやろうかな')
+    reply_message = aimay.get_replymessage('text', 'ゲームをやろうかな')
     self.assertEqual('text', reply_message[0])
     self.assertIsNotNone(reply_message[1])
     self.assertIsNone(reply_message[2])
