@@ -71,7 +71,7 @@ def handle_message(event):
         event.reply_token,
         StickerSendMessage(package_id=reply_package,sticker_id=reply_sticker))
 
-@handler.add(MessageEvent, message=ImageMessage, AudioMessage)
+@handler.add(MessageEvent, message=(ImageMessage, AudioMessage))
 def handle_message(event):
     push_type = 'media'
     push_text = None
