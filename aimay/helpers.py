@@ -10,8 +10,8 @@ def return_data(filename):
     return datalines[random.randint(0,(len(datalines) - 1))].strip()
 
 # return reply sticker
-#  - LINE Available sticker list
-#    https://developers.line.biz/media/messaging-api/sticker_list.pdf
+# - LINE Available sticker list
+#   https://developers.line.biz/media/messaging-api/sticker_list.pdf
 def return_sticker(index):
     # sleep
     if (index == 0):
@@ -36,7 +36,7 @@ def return_sticker(index):
     else:
         reply_package = '11537'
         reply_sticker = '52002734'
-    return reply_package reply_sticker
+    return reply_package, reply_sticker
 
 # return reply message(A3RT/TalkAPI)
 import pya3rt
