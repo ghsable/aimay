@@ -89,5 +89,12 @@ class TestCore(unittest.TestCase):
         self.assertIsNotNone(reply[2])
         self.assertIsNotNone(reply[3])
 
+    # --- debug
+    reply = aimay.get_reply('', None)
+    self.assertEqual('text', reply[0])
+    self.assertEqual('サポートしていない形式ですニャン', reply[1])
+    self.assertIsNone(reply[2])
+    self.assertIsNone(reply[3])
+
 if __name__ == "__main__":
     unittest.main()
