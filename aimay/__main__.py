@@ -13,7 +13,7 @@ from linebot.exceptions import (
 )
 from linebot.models import (
     MessageEvent, FollowEvent, 
-    TextMessage, StickerMessage, ImageMessage, AudioMessage
+    TextMessage, StickerMessage, ImageMessage, AudioMessage, 
     TextSendMessage, StickerSendMessage, ImageSendMessage
 )
 
@@ -71,14 +71,14 @@ def handle_message(event):
         event.reply_token,
         StickerSendMessage(package_id=reply_package,sticker_id=reply_sticker))
 
-#@handler.add(MessageEvent, message=ImageMessage, AudioMessage)
-#def handle_message(event):
-#    push_type = 'media'
-#    push_text = None
-#    reply_type, reply_text, reply_package, reply_sticker = core.get_reply(push_type, push_text)
-#    line_bot_api.reply_message(
-#        event.reply_token,
-#        TextSendMessage(text=reply_text))
+@handler.add(MessageEvent, message=ImageMessage, AudioMessage)
+def handle_message(event):
+    push_type = 'media'
+    push_text = None
+    reply_type, reply_text, reply_package, reply_sticker = core.get_reply(push_type, push_text)
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text=reply_text))
 
 @handler.add(FollowEvent)
 def handle_follow(event):
