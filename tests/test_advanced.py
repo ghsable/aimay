@@ -7,6 +7,7 @@ import unittest
 class TestCore(unittest.TestCase):
 
   def test_get_reply(self):
+    # --- text
     reply = aimay.get_reply('text', 'おうむがえし！')
     self.assertEqual('text', reply[0])
     self.assertEqual('おうむがえし！ニャン', reply[1])
@@ -79,6 +80,14 @@ class TestCore(unittest.TestCase):
     self.assertIsNotNone(reply[1])
     self.assertIsNone(reply[2])
     self.assertIsNone(reply[3])
+
+    # --- sticker
+    for i in range(10):
+        reply = aimay.get_reply('sticker', None)
+        self.assertEqual('sticker', reply[0])
+        self.assertIsNone(reply[1])
+        self.assertIsNotNone(reply[2])
+        self.assertIsNotNone(reply[3])
 
 if __name__ == "__main__":
     unittest.main()
