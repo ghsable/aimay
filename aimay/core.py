@@ -46,5 +46,5 @@ def get_reply(push_type, push_text):
         reply_package, reply_sticker = helpers.return_sticker('variety')
     else:
         reply_type = 'text'
-        reply_text = 'サポートしていない形式ですニャン'
+        reply_text = 'よくわかりませんニャン'
     return reply_type, reply_text, reply_package, reply_sticker
