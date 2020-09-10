@@ -20,5 +20,5 @@ setup(
     author_email='suna@xmpp.is',
     url='https://github.com/ghsable/aimay',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=('tests', 'docs', '.github', '.maintenance', '.readme'))
 )
