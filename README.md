@@ -69,12 +69,12 @@ Example:
 
 #### actions
 
-| Marketplace/Actions                                                         | Version  | Environment variable(GitHub)                            |
-| :---                                                                        | :---     | :---                                                    |
-| [Checkout](https://github.com/marketplace/actions/checkout)                 | `2.x.x`  | `-`                                                     |
-| -                                                                           | `-`      | `A3RT_TALKAPI_APIKEY`                                   |
-| [Codecov](https://github.com/marketplace/actions/codecov)                   | `1.x.x`  | `CODECOV_TOKEN`                                         |
-| [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku) | `3.4.6`  | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
+| Marketplace/Actions                                                         | [Version](https://github.com/ghsable/aimay/blob/master/.github/workflows/main.yml)  | Environment variable(GitHub)                            |
+| :---                                                                        | :---                                                                                | :---                                                    |
+| [Checkout](https://github.com/marketplace/actions/checkout)                 | `2.x.x`                                                                             | `-`                                                     |
+| -                                                                           | `-`                                                                                 | `A3RT_TALKAPI_APIKEY`                                   |
+| [Codecov](https://github.com/marketplace/actions/codecov)                   | `1.x.x`                                                                             | `CODECOV_TOKEN`                                         |
+| [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku) | `3.4.6`                                                                             | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
 
 #### badges
 
