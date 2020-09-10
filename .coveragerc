@@ -1,6 +1,7 @@
 [run]
 source = .
-omit = *tests*
+omit = setup.py
+       *tests*
        *__init__*
        *__main__*
 
