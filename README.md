@@ -50,7 +50,7 @@ Example:
 ### Requirement
 * [LINE](https://line.me/ja/)
 * [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/aimay/blob/master/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
-* [GitHub](https://github.com/) + [actions](#actions) + [readme](#readme)
+* [GitHub](https://github.com/) + [actions](#actions) + [badges](#badges)
 * [Heroku](https://jp.heroku.com/)
 * cat<< [Requirement](#requirement) >(⋈MAY◍＞◡＜◍)。✧♡RIN♡
 
@@ -76,11 +76,13 @@ Example:
 | [Codecov](https://github.com/marketplace/actions/codecov)                   | `1.x.x`  | `CODECOV_TOKEN`                                         |
 | [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku) | `3.4.6`  | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
 
-#### readme
+#### badges
 
 | Homepage                          | Application                                                   | This Repository                                                                            |
 | :---                              | :---                                                          | :---                                                                                       |
 | [Codecov](https://codecov.io/)    | [marketplace/codecov](https://github.com/marketplace/codecov) | [aimay](https://codecov.io/gh/ghsable/aimay)                                               |
 | [Shields.io](https://shields.io/) | -                                                             | -                                                                                          |
 | [FOSSA](https://fossa.com/)       | [fossabot](https://github.com/fossabot)                       | [aimay](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large) |
+
+[BACK TO TOP](#readme)
 
