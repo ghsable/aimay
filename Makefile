@@ -1,8 +1,10 @@
 init:
-	python -m pip install -r requirements.txt
-	python -m pip install codecov
+	pip install -r requirements.txt
 
 test:
+	nosetests tests
+
+coverage:
 	python -m coverage run -m unittest discover
 
 run:
