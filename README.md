@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/ghsable/aimay/master/.readme/may.png" width="150" height="150" align="center" alt="may">
-  <h2 align="center">LINE Bot AI May</h2>
+  <h2 align="center">LINE Bot AI <a href="https://ghsable.github.io/aimay/">May</a></h2>
   <p align="center">🤖 -> 🐈 <- 🧠</p>
 </p>
   <p align="center">
@@ -50,7 +50,7 @@ Example:
 ### Requirement
 * [LINE](https://line.me/ja/)
 * [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/aimay/blob/master/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
-* [GitHub](https://github.com/) + [actions](#actions) + [badges](#badges)
+* [GitHub](#github) + [actions](#actions) + [badges](#badges)
 * [Heroku](https://jp.heroku.com/)
 * cat<< [Requirement](#requirement) >(⋈MAY◍＞◡＜◍)。✧♡RIN♡
 
@@ -66,6 +66,13 @@ Example:
 | [Metacritic](https://www.metacritic.com/game)                    | -                                                      | -                                                                           | `-`                                                                      | `-`                                                  |
 | [Google](https://www.google.com/)                                | -                                                      | -                                                                           | `-`                                                                      | `-`                                                  |
 | [A3RT/TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/) | [pya3rt](https://pypi.org/project/pya3rt/)             | [nocotan/pya3rt](https://github.com/nocotan/pya3rt)                         | `1.1`                                                                    | `A3RT_TALKAPI_APIKEY`                                |
+
+#### GitHub
+
+| Homepage                                  | This Repository                           |
+| :---                                      | :---                                      |
+| [GitHub](https://github.com/)             | [aimay](https://github.com/ghsable/aimay) |
+| [GitHub Pages](https://pages.github.com/) | [aimay](https://ghsable.github.io/aimay/) |
 
 #### actions
 
