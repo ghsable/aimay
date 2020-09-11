@@ -6,6 +6,7 @@ test:
 
 coverage:
 	python -m coverage run -m unittest discover
+	python -m coverage html
 
 run:
 	python -m aimay
