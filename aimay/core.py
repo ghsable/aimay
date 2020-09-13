@@ -1,9 +1,17 @@
 # -*- coding: utf-8 -*-
 from . import helpers
 
-# return reply message and type and index
 import random
 def get_reply(push_type, push_text):
+    """Get reply information.
+
+    :param push_type: push message type
+    :type push_type: str
+    :param push_text: push message text
+    :type push_text: str
+    :returns: reply_type, reply_text, reply_package, reply_sticker
+    :rtype: str
+    """
     reply_type, reply_text, reply_package, reply_sticker = None, None, None, None
     if (push_type == 'text'):
         if ('おうむ' in push_text) or ('オウム' in push_text) or ('鸚鵡' in push_text) or ('🦜' in push_text):
