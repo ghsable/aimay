@@ -1,1 +1,1 @@
-/home/suna/aimay/README.rst
+../README.rst
