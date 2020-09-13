@@ -1,18 +1,31 @@
 # -*- coding: utf-8 -*-
 
-# return reply message(from data/*.txt)
 import os
 import random
 def return_data(filename):
+    """Return reply message from data directory.
+
+    :param filename: filename in data directory
+    :type filename: str
+    :returns: datalines_random
+    :rtype: str
+    """
     filepath = os.path.join(os.getcwd(), 'aimay/data', filename)
     with open(filepath) as datafile:
         datalines = datafile.readlines()
-    return datalines[random.randint(0,(len(datalines) - 1))].strip()
+        datalines_random = datalines[random.randint(0,(len(datalines) - 1))].strip()
+    return datalines_random
 
-# return reply sticker
-# - LINE Available sticker list
-#   https://developers.line.biz/media/messaging-api/sticker_list.pdf
+# LINE Available sticker list
+# https://developers.line.biz/media/messaging-api/sticker_list.pdf
 def return_sticker(index):
+    """Return reply sticker.
+
+    :param index: index of stickers
+    :type index: str
+    :returns: reply_package, reply_sticker
+    :rtype: str
+    """
     if (index == 'sleep'):
         sticker_switch = random.randint(0,2)
         if (sticker_switch == 0):
@@ -55,9 +68,17 @@ def return_sticker(index):
         reply_sticker = '52002734'
     return reply_package, reply_sticker
 
-# return reply message(A3RT/TalkAPI)
 import pya3rt
 def talkapi_response(push_text):
+    """
+    Return reply message from A3RT/TalkAPI.
+
+    :param push_text: push message text
+    :type push_text: str
+    :returns: talkapi_reply
+    :rtype: str
+    """
     talkapi_client = pya3rt.TalkClient(os.environ.get('A3RT_TALKAPI_APIKEY'))
     talkapi_response = talkapi_client.talk(push_text)
-    return ((talkapi_response['results'])[0])['reply']
+    talkapi_reply = ((talkapi_response['results'])[0])['reply']
+    return talkapi_reply

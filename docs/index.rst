@@ -5,12 +5,22 @@
 
 Welcome to aimay's documentation!
 ==================================
-
-Contents:
+Readme:
 
 .. toctree::
    :maxdepth: 2
 
+   README
+
+
+Modules:
+
+.. toctree::
+   :maxdepth: 2
+
+   modules/core
+
+   modules/helpers
 
 
 Indices and tables

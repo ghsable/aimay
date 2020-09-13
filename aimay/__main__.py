@@ -46,7 +46,7 @@ def callback():
 def handle_message(event):
     push_type = 'text'
     push_text = event.message.text
-    # get reply message and type
+    # get reply information
     reply_type, reply_text, reply_package, reply_sticker = core.get_reply(push_type, push_text)
     # reply
     if (reply_type == 'text'):
