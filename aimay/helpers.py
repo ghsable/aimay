@@ -7,14 +7,14 @@ def return_data(filename):
 
     :param filename: filename in data directory
     :type filename: str
-    :returns: datalines_random
+    :returns: dataline
     :rtype: str
     """
     filepath = os.path.join(os.getcwd(), 'aimay/data', filename)
     with open(filepath) as datafile:
         datalines = datafile.readlines()
-        datalines_random = datalines[random.randint(0,(len(datalines) - 1))].strip()
-    return datalines_random
+        dataline = datalines[random.randint(0,(len(datalines) - 1))].strip()
+    return dataline
 
 # LINE Available sticker list
 # https://developers.line.biz/media/messaging-api/sticker_list.pdf
