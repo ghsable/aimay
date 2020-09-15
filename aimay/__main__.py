@@ -2,7 +2,7 @@
 # python -m
 #from . import core
 # uwsgi
-import aimay.core
+import aimay
 
 # line/line-bot-sdk-python
 # https://github.com/line/line-bot-sdk-python
