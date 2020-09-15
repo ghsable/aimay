@@ -1,1 +1,1 @@
-web: uwsgi --http=0.0.0.0:${PORT} --wsgi-file=aimay/__main__.py --callable=app
+web: uwsgi -s /tmp/release.sock --manage-script-name --mount /=release:app
