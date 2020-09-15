@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-from . import core
+# python -m
+#from . import core
+# uwsgi
+import aimay.core
 
 # line/line-bot-sdk-python
 # https://github.com/line/line-bot-sdk-python
