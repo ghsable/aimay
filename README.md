@@ -105,10 +105,10 @@ Example:
 | [FOSSA](https://fossa.com/)       | [fossabot](https://github.com/fossabot)                       | [aimay](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large) |
 
 ### app.run
-| Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)       | HOST:PORT         |
-| :---  | :---                                                  | :---                                                                    | :---              |
-| 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                       | `0.0.0.0:${PORT}` |
-| 2     | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=4 --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
-| **3** | [Gunicorn](https://gunicorn.org/)                     | `gunicorn --workers 4 aimay.__main__:app`                               | `0.0.0.0:${PORT}` |
+| Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)                                                 | HOST:PORT         |
+| :---  | :---                                                  | :---                                                                                                              | :---              |
+| 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                                                                 | `0.0.0.0:${PORT}` |
+| 2     | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=$(($(grep -c processor /proc/cpuinfo)*2+1)) --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
+| **3** | [Gunicorn](https://gunicorn.org/)                     | `gunicorn --workers $(($(grep -c processor /proc/cpuinfo)*2+1)) aimay.__main__:app`                               | `0.0.0.0:${PORT}` |
 
 [BACK TO TOP](#readme)
