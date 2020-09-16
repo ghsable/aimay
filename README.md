@@ -109,6 +109,6 @@ Example:
 | :---  | :---                                                  | :---                                                                    | :---              |
 | 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                       | `0.0.0.0:${PORT}` |
 | 2     | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=4 --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
-| **3** | [Gunicorn](https://gunicorn.org/)                     | `gunicorn -w 4 aimay.__main__:app`                                      | `0.0.0.0:${PORT}` |
+| **3** | [Gunicorn](https://gunicorn.org/)                     | `gunicorn --workers 4 aimay.__main__:app`                               | `0.0.0.0:${PORT}` |
 
 [BACK TO TOP](#readme)
