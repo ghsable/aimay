@@ -47,12 +47,6 @@ Example:
 | おやすみー | [sticker](https://developers.line.biz/media/messaging-api/sticker_list.pdf) |
 
 ## Development
-### app.run
-| Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)       | HOST:PORT         |
-| :---  | :---                                                  | :---                                                                    | :---              |
-| 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                       | `0.0.0.0:${PORT}` |
-| **2** | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=4 --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
-
 ### Requirement
 * [LINE](https://line.me/ja/)
 * [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/aimay/blob/master/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
@@ -64,14 +58,15 @@ Example:
 
 | Homepage                                                         | PyPI                                                   | GitHub                                                                      | [Version](https://github.com/ghsable/aimay/blob/master/requirements.txt) | Environment variable(Heroku)                         |
 | :---                                                             | :---                                                   | :---                                                                        | :---                                                                     | :---                                                 |
-| [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/)            | [uWSGI](https://pypi.org/project/uWSGI/)               | [unbit/uwsgi](https://github.com/unbit/uwsgi)                               | `2.0.19.1`                                                               | `-`                                                  |
+| ~[uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/)~          | ~[uWSGI](https://pypi.org/project/uWSGI/)~             | ~[unbit/uwsgi](https://github.com/unbit/uwsgi)~                             | ~`2.0.19.1`~                                                             | ~`-`~                                                |
+| [Gunicorn](https://gunicorn.org/)                                | [gunicorn](https://pypi.org/project/gunicorn/)         | [benoitc/gunicorn](https://github.com/benoitc/gunicorn)                     | `20.0.4`                                                                 | `-`                                                  |
 | [nose](https://nose.readthedocs.io/en/latest/)                   | [nose](https://pypi.org/project/nose/)                 | [nose-devs/nose](https://github.com/nose-devs/nose)                         | `1.3.7`                                                                  | `-`                                                  |
 | [Sphinx](https://www.sphinx-doc.org/en/master/)                  | [Sphinx](https://pypi.org/project/Sphinx/)             | [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx)                   | `3.2.1`                                                                  | `-`                                                  |
 | [Codecov](https://codecov.io/)                                   | [codecov](https://pypi.org/project/codecov/)           | [codecov/codecov-python](https://github.com/codecov/codecov-python)         | `2.1.9`                                                                  | `-`                                                  |
 | [LINE Developers](https://developers.line.biz/ja/)               | [line-bot-sdk](https://pypi.org/project/line-bot-sdk/) | [line/line-bot-sdk-python](https://github.com/line/line-bot-sdk-python)     | `1.16.0`                                                                 | `LINE_CHANNEL_ACCESS_TOKEN`<br>`LINE_CHANNEL_SECRET` |
 | [Flask](https://flask.palletsprojects.com/en/1.1.x/)             | [Flask](https://pypi.org/project/Flask/)               | [pallets/flask](https://github.com/pallets/flask)                           | `1.1.2`                                                                  | `-`                                                  |
 | [A3RT/TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/) | [pya3rt](https://pypi.org/project/pya3rt/)             | [nocotan/pya3rt](https://github.com/nocotan/pya3rt)                         | `1.1`                                                                    | `A3RT_TALKAPI_APIKEY`                                |
-| [TMDb](https://www.themoviedb.org/?language=ja)                  | ~~[tmdbv3api](https://pypi.org/project/tmdbv3api/)~~   | ~~[AnthonyBloomer/tmdbv3api](https://github.com/AnthonyBloomer/tmdbv3api)~~ | ~`1.6.2`~                                                                | ~~`TMDB_API_KEY`~~                                   |
+| [TMDb](https://www.themoviedb.org/?language=ja)                  | ~[tmdbv3api](https://pypi.org/project/tmdbv3api/)~     | ~[AnthonyBloomer/tmdbv3api](https://github.com/AnthonyBloomer/tmdbv3api)~   | ~`1.6.2`~                                                                | ~`TMDB_API_KEY`~                                     |
 | [YouTube](https://www.youtube.com/?gl=JP)                        | -                                                      | -                                                                           | `-`                                                                      | `-`                                                  |
 | [Filmarks](https://filmarks.com/)                                | -                                                      | -                                                                           | `-`                                                                      | `-`                                                  |
 | [Metacritic](https://www.metacritic.com/game)                    | -                                                      | -                                                                           | `-`                                                                      | `-`                                                  |
@@ -108,5 +103,12 @@ Example:
 | [Codecov](https://codecov.io/)    | [marketplace/codecov](https://github.com/marketplace/codecov) | [aimay](https://codecov.io/gh/ghsable/aimay)                                               |
 | [Shields.io](https://shields.io/) | -                                                             | -                                                                                          |
 | [FOSSA](https://fossa.com/)       | [fossabot](https://github.com/fossabot)                       | [aimay](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large) |
+
+### app.run
+| Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)       | HOST:PORT         |
+| :---  | :---                                                  | :---                                                                    | :---              |
+| 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                       | `0.0.0.0:${PORT}` |
+| 2     | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=4 --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
+| **3** | [Gunicorn](https://gunicorn.org/)                     | `gunicorn -w 4 aimay.__main__:app`                                      | `0.0.0.0:${PORT}` |
 
 [BACK TO TOP](#readme)

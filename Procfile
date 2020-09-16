@@ -1,1 +1,1 @@
-web: uwsgi --workers=4 --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app
+web: gunicorn -w 4 aimay.__main__:app
