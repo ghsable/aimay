@@ -1,1 +1,1 @@
-web: gunicorn -w 4 release:app
+web: uwsgi --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app
