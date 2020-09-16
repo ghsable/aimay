@@ -47,6 +47,12 @@ Example:
 | おやすみー | [sticker](https://developers.line.biz/media/messaging-api/sticker_list.pdf) |
 
 ## Development
+### app.run
+| Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)       | HOST:PORT         |
+| :---  | :---                                                  | :---                                                                    | :---              |
+| 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                       | `0.0.0.0:${PORT}` |
+| **2** | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=4 --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
+
 ### Requirement
 * [LINE](https://line.me/ja/)
 * [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/aimay/blob/master/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
@@ -58,6 +64,7 @@ Example:
 
 | Homepage                                                         | PyPI                                                   | GitHub                                                                      | [Version](https://github.com/ghsable/aimay/blob/master/requirements.txt) | Environment variable(Heroku)                         |
 | :---                                                             | :---                                                   | :---                                                                        | :---                                                                     | :---                                                 |
+| [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/)            | [uWSGI](https://pypi.org/project/uWSGI/)               | [unbit/uwsgi](https://github.com/unbit/uwsgi)                               | `2.0.19.1`                                                               | `-`                                                  |
 | [nose](https://nose.readthedocs.io/en/latest/)                   | [nose](https://pypi.org/project/nose/)                 | [nose-devs/nose](https://github.com/nose-devs/nose)                         | `1.3.7`                                                                  | `-`                                                  |
 | [Sphinx](https://www.sphinx-doc.org/en/master/)                  | [Sphinx](https://pypi.org/project/Sphinx/)             | [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx)                   | `3.2.1`                                                                  | `-`                                                  |
 | [Codecov](https://codecov.io/)                                   | [codecov](https://pypi.org/project/codecov/)           | [codecov/codecov-python](https://github.com/codecov/codecov-python)         | `2.1.9`                                                                  | `-`                                                  |
