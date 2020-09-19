@@ -24,6 +24,9 @@
   </p>
 
 ## Try it out!
+
+[![Join the chat at https://gitter.im/ghsable/aimay](https://badges.gitter.im/ghsable/aimay.svg)](https://gitter.im/ghsable/aimay?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Use this Line QR code to add the Bot:  
 **OR CODE**
 
