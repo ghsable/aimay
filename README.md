@@ -16,6 +16,9 @@
     <a href="https://github.com/ghsable/aimay/pulls">
       <img alt="GitHub Pull requests" src="https://img.shields.io/github/issues-pr/ghsable/aimay?color=0088ff">
     </a>
+    <a href="https://gitter.im/ghsable/aimay?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge">
+      <img alt="Gitter" src="https://badges.gitter.im/ghsable/aimay.svg">
+    </a>
   </p>
   <p align="center">
     <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large">
