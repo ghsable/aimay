@@ -16,6 +16,9 @@
     <a href="https://github.com/ghsable/aimay/pulls">
       <img alt="GitHub Pull requests" src="https://img.shields.io/github/issues-pr/ghsable/aimay?color=0088ff">
     </a>
+    <a href="https://gitter.im/ghsable/aimay?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge">
+      <img alt="Gitter" src="https://badges.gitter.im/ghsable/aimay.svg">
+    </a>
   </p>
   <p align="center">
     <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large">
@@ -24,9 +27,6 @@
   </p>
 
 ## Try it out!
-
-[![Join the chat at https://gitter.im/ghsable/aimay](https://badges.gitter.im/ghsable/aimay.svg)](https://gitter.im/ghsable/aimay?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 Use this Line QR code to add the Bot:  
 **OR CODE**
 
