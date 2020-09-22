@@ -10,6 +10,9 @@
     <a href="https://codecov.io/gh/ghsable/aimay">
       <img alt="Codecov" src="https://codecov.io/gh/ghsable/aimay/branch/master/graph/badge.svg">
     </a>
+    <a href="https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings">
+      <img alt="Codacy Badge" src="https://api.codacy.com/project/badge/Grade/ee9e836cc9bb41ba8b8624cc5784513a">
+    </a>
     <a href="https://github.com/ghsable/aimay/issues">
       <img alt="GitHub Issues" src="https://img.shields.io/github/issues/ghsable/aimay?color=0088ff">
     </a>
@@ -27,11 +30,8 @@
   </p>
 
 ## Try it out!
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ee9e836cc9bb41ba8b8624cc5784513a)](https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings)
-
 Use this Line QR code to add the Bot:  
-**OR CODEg**
+**OR CODE**
 
 ## Usage
 * This Bot only supports 🗾[Japanese](https://en.wikipedia.org/wiki/Japanese_language)
@@ -94,21 +94,24 @@ Example:
 
 #### actions
 
-| Marketplace/Actions                                                               | [Version](https://github.com/ghsable/aimay/blob/master/.github/workflows/main.yml)  | Environment variable(GitHub)                            |
-| :---                                                                              | :---                                                                                | :---                                                    |
-| [Checkout](https://github.com/marketplace/actions/checkout)                       | `2.x.x`                                                                             | `-`                                                     |
-| -                                                                                 | `-`                                                                                 | `A3RT_TALKAPI_APIKEY`                                   |
-| [Codecov](https://github.com/marketplace/actions/codecov)                         | `1.x.x`                                                                             | `CODECOV_TOKEN`                                         |
-| [GitHub Pages action](https://github.com/marketplace/actions/github-pages-action) | `3.x.x`                                                                             | `GITHUB_TOKEN`                                          |
-| [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku)       | `3.4.6`                                                                             | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
+| Marketplace/Actions                                                                         | [Version](https://github.com/ghsable/aimay/blob/master/.github/workflows/main.yml)  | Environment variable(GitHub)                            |
+| :---                                                                                        | :---                                                                                | :---                                                    |
+| [Checkout](https://github.com/marketplace/actions/checkout)                                 | `2.x.x`                                                                             | `-`                                                     |
+| -                                                                                           | `-`                                                                                 | `A3RT_TALKAPI_APIKEY`                                   |
+| [Codecov](https://github.com/marketplace/actions/codecov)                                   | `1.x.x`                                                                             | `CODECOV_TOKEN`                                         |
+| [Codacy Coverage Reporter](https://github.com/marketplace/actions/codacy-coverage-reporter) | `0.2.0`                                                                             | `CODACY_PROJECT_TOKEN`                                  |
+| [GitHub Pages action](https://github.com/marketplace/actions/github-pages-action)           | `3.x.x`                                                                             | `GITHUB_TOKEN`                                          |
+| [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku)                 | `3.4.6`                                                                             | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
 
 #### badges
 
-| Homepage                          | Application                                                   | This Repository                                                                            |
-| :---                              | :---                                                          | :---                                                                                       |
-| [Codecov](https://codecov.io/)    | [marketplace/codecov](https://github.com/marketplace/codecov) | [aimay](https://codecov.io/gh/ghsable/aimay)                                               |
-| [Shields.io](https://shields.io/) | -                                                             | -                                                                                          |
-| [FOSSA](https://fossa.com/)       | [fossabot](https://github.com/fossabot)                       | [aimay](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large) |
+| Homepage                                       | Application                                                   | This Repository                                                                                                                                            |
+| :---                                           | :---                                                          | :---                                                                                                                                                       |
+| [Codecov](https://codecov.io/)                 | [marketplace/codecov](https://github.com/marketplace/codecov) | [aimay](https://codecov.io/gh/ghsable/aimay)                                                                                                               |
+| [Codacy](https://app.codacy.com/organizations) | -                                                             | [aimay](https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings) |
+| [Gitter](https://gitter.im/)                   | -                                                             | [aimay](https://gitter.im/ghsable/aimay)                                                                                                                   |
+| [Shields.io](https://shields.io/)              | -                                                             | -                                                                                                                                                          |
+| [FOSSA](https://fossa.com/)                    | [fossabot](https://github.com/fossabot)                       | [aimay](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large)                                                                 |
 
 ### app.run
 | Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)                                                 | HOST:PORT         |
