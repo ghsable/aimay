@@ -47,6 +47,15 @@ jobs:
         name: codecov-umbrella
         fail_ci_if_error: true
     # -----
+    # ----- Codacy
+    # codacy/codacy-coverage-reporter-action
+    # https://github.com/codacy/codacy-coverage-reporter-action
+    - name: Codacy Coverage Reporter
+      uses: codacy/codacy-coverage-reporter-action@0.2.0
+      with:
+        project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+        coverage-reports: ./cobertura.xml
+    # -----
     # ----- Sphinx -> GitHub Pages
     # DONE : Setup Python
     # DONE : Setup Python modules
