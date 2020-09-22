@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from . import helpers
 
-import random
 def get_reply(push_type, push_text):
     """Get reply information.
 
