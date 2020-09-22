@@ -13,6 +13,9 @@
     <a href="https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings">
       <img alt="Codacy Badge" src="https://api.codacy.com/project/badge/Grade/ee9e836cc9bb41ba8b8624cc5784513a">
     </a>
+    <a href="https://www.codefactor.io/repository/github/ghsable/aimay">
+      <img alt="CodeFactor" src="https://www.codefactor.io/repository/github/ghsable/aimay/badge">
+    </a>
     <a href="https://codeclimate.com/github/ghsable/aimay/maintainability">
       <img alt="CodeClimate maintainability" src="https://api.codeclimate.com/v1/badges/e3f4d2f4c051c357b55a/maintainability">
     </a>
@@ -112,6 +115,7 @@ Example:
 | :---                                           | :---                                                          | :---                                                                                                                                                       |
 | [Codecov](https://codecov.io/)                 | [marketplace/codecov](https://github.com/marketplace/codecov) | [aimay](https://codecov.io/gh/ghsable/aimay)                                                                                                               |
 | [Codacy](https://app.codacy.com/organizations) | -                                                             | [aimay](https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings) |
+| [CodeFactor](https://www.codefactor.io)        | -                                                             | [aimay](https://www.codefactor.io/repository/github/ghsable/aimay)                                                                                         |
 | [Code Climate](https://codeclimate.com)        | -                                                             | [aimay](https://codeclimate.com/github/ghsable/aimay/maintainability)                                                                                      |
 | [Gitter](https://gitter.im/)                   | -                                                             | [aimay](https://gitter.im/ghsable/aimay)                                                                                                                   |
 | [Shields.io](https://shields.io/)              | -                                                             | -                                                                                                                                                          |
