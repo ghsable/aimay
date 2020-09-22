@@ -27,6 +27,9 @@
   </p>
 
 ## Try it out!
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ee9e836cc9bb41ba8b8624cc5784513a)](https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings)
+
 Use this Line QR code to add the Bot:  
 **OR CODEg**
 
