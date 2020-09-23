@@ -36,6 +36,7 @@
   </p>
 
 # Table of Contents
+
 * [LINE Bot AI May](#readme)
 * [Table of Contents](#table-of-contents)
 * [Try it out!](#try-it-out)
@@ -50,10 +51,12 @@
   * [app.run](#apprun)
 
 # Try it out!
+
 Use this Line QR code to add the Bot:  
 **OR CODE**
 
 # Usage
+
 * This Bot only supports 🗾[Japanese](https://en.wikipedia.org/wiki/Japanese_language)
 
 Example:
@@ -130,7 +133,7 @@ Example:
 | Homepage                                       | Application                                                   | This Repository                                                                                                                                            |
 | :---                                           | :---                                                          | :---                                                                                                                                                       |
 | [Codecov](https://codecov.io/)                 | [marketplace/codecov](https://github.com/marketplace/codecov) | [aimay](https://codecov.io/gh/ghsable/aimay)                                                                                                               |
-| [Codacy](https://app.codacy.com/organizations) | -                                                             | [aimay](https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings) |
+| [Codacy](https://www.codacy.com/)              | -                                                             | [aimay](https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings) |
 | [CodeFactor](https://www.codefactor.io)        | -                                                             | [aimay](https://www.codefactor.io/repository/github/ghsable/aimay)                                                                                         |
 | [Code Climate](https://codeclimate.com)        | -                                                             | [aimay](https://codeclimate.com/github/ghsable/aimay/maintainability)                                                                                      |
 | [Gitter](https://gitter.im/)                   | -                                                             | [aimay](https://gitter.im/ghsable/aimay)                                                                                                                   |
@@ -139,12 +142,12 @@ Example:
 
 ### others
 
-| Homepage                                       | GitHub                                          | This Repository                                                             |
-| :---                                           | :---                                            | :---                                                                        |
-| [Stale](https://probot.github.io/apps/stale/)  | [probot/stale](https://github.com/probot/stale) | [stale.yml](https://github.com/ghsable/aimay/blob/master/.github/stale.yml) |
-| [GitHub Learning Lab](https://lab.github.com/) | -                                               | [ghsable/github-slideshow](https://github.com/ghsable/github-slideshow)     |
-| [ZenHub](https://www.zenhub.com/)              | [ZenHub](https://github.com/ZenHubIO)           | aimay                                                                       |
-| [Zube](https://zube.io/)                       | [zube](https://github.com/zubeio)               | aimay                                                                       |
+| Homepage                                       | GitHub                                                                              | This Repository                                                             |
+| :---                                           | :---                                                                                | :---                                                                        |
+| [Stale](https://probot.github.io/apps/stale/)  | [probot/stale](https://github.com/probot/stale)                                     | [stale.yml](https://github.com/ghsable/aimay/blob/master/.github/stale.yml) |
+| [GitHub Learning Lab](https://lab.github.com/) | [github/learning-lab-components](https://github.com/github/learning-lab-components) | [ghsable/github-slideshow](https://github.com/ghsable/github-slideshow)     |
+| [ZenHub](https://www.zenhub.com/)              | [ZenHub](https://github.com/ZenHubIO)                                               | aimay                                                                       |
+| [Zube](https://zube.io/)                       | [zube](https://github.com/zubeio)                                                   | aimay                                                                       |
 
 ## app.run
 
