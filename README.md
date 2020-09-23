@@ -35,11 +35,25 @@
     </a>
   </p>
 
-## Try it out!
+# Table of Contents
+* [LINE Bot AI May](#readme)
+* [Table of Contents](#table-of-contents)
+* [Try it out!](#try-it-out)
+* [Usage](#usage)
+* [Development](#development)
+  * [Requirement](#requirement)
+    * [modules](#modules)
+    * [GitHub](#github)
+    * [actions](#actions)
+    * [badges](#badges)
+    * [others](#others)
+  * [app.run](#apprun)
+
+# Try it out!
 Use this Line QR code to add the Bot:  
 **OR CODE**
 
-## Usage
+# Usage
 * This Bot only supports 🗾[Japanese](https://en.wikipedia.org/wiki/Japanese_language)
 
 Example:
@@ -58,15 +72,15 @@ Example:
 | 天気どうなるかな | ここを見ているニャン<br>[Google天気](https://www.google.co.jp/search?q=天気) |
 | おやすみー | [sticker](https://developers.line.biz/media/messaging-api/sticker_list.pdf) |
 
-## Development
-### Requirement
+# Development
+## Requirement
 * [LINE](https://line.me/ja/)
 * [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/aimay/blob/master/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
-* [GitHub](#github) + [actions](#actions) + [badges](#badges)
+* [GitHub](#github) + [actions](#actions) + [badges](#badges) + [others](#others)
 * [Heroku](https://jp.heroku.com/)
 * cat<< [Requirement](#requirement) >(⋈MAY◍＞◡＜◍)。✧♡RIN♡
 
-#### modules
+### modules
 
 | Homepage                                                         | PyPI                                                   | GitHub                                                                      | [Version](https://github.com/ghsable/aimay/blob/master/requirements.txt) | Environment variable(Heroku)                         |
 | :---                                                             | :---                                                   | :---                                                                        | :---                                                                     | :---                                                 |
@@ -84,22 +98,23 @@ Example:
 | [Metacritic](https://www.metacritic.com/game)                    | -                                                      | -                                                                           | `-`                                                                      | `-`                                                  |
 | [Google](https://www.google.com/)                                | -                                                      | -                                                                           | `-`                                                                      | `-`                                                  |
 
-#### GitHub
+### GitHub
 
 | Homepage                                                           | This Repository                                                                                           |
 | :---                                                               | :---                                                                                                      |
 | [GitHub](https://github.com/)                                      | [Code](https://github.com/ghsable/aimay)                                                                  |
-| [GitHub Issues](https://guides.github.com/features/issues/)        | [Issues](https://github.com/ghsable/aimay/issues)                                                         |
-| [GitHub Pull requests](https://github.com/features/code-review/)   | [Pull requests](https://github.com/ghsable/aimay/pulls)                                                   |
-| [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)                                                       |
+| [GitHub Issues](https://guides.github.com/features/issues/)        | [Issues](https://github.com/ghsable/aimay/issues)<br>[ISSUE_TEMPLATE](https://github.com/ghsable/aimay/tree/master/.github/ISSUE_TEMPLATE)                           |
+| [GitHub Pull requests](https://github.com/features/code-review/)   | [Pull requests](https://github.com/ghsable/aimay/pulls)<br>[pull_request_template.md](https://github.com/ghsable/aimay/blob/master/.github/pull_request_template.md) |
+| [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)<br>[workflows](https://github.com/ghsable/aimay/tree/master/.github/workflows)                                   |
 | [GitHub Projects](https://github.com/features/project-management/) | [Projects](https://github.com/ghsable/aimay/projects)                                                     |
 | [GitHub Wiki](https://guides.github.com/features/wikis/)           | [Wiki](https://github.com/ghsable/aimay/wiki)                                                             |
 | [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)                                                     |
 | [GitHub Insights](https://github.com/features/insights)            | [Insights](https://github.com/ghsable/aimay/pulse)                                                        |
 | [GitHub Pages](https://pages.github.com/)                          | [aimay](https://ghsable.github.io/aimay/)                                                                 |
+| [GitHub Sponsors](https://github.com/sponsors)                     | [FUNDING.yml](https://github.com/ghsable/aimay/blob/master/.github/FUNDING.yml)                           |
 | [GitHub CodeQL](https://securitylab.github.com/tools/codeql)       | [codeql-analysis.yml](https://github.com/ghsable/aimay/blob/master/.github/workflows/codeql-analysis.yml) |
 
-#### actions
+### actions
 
 | Marketplace/Actions                                                                         | [Version](https://github.com/ghsable/aimay/blob/master/.github/workflows/main.yml)  | Environment variable(GitHub)                            |
 | :---                                                                                        | :---                                                                                | :---                                                    |
@@ -110,7 +125,7 @@ Example:
 | [GitHub Pages action](https://github.com/marketplace/actions/github-pages-action)           | `3.x.x`                                                                             | `GITHUB_TOKEN`                                          |
 | [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku)                 | `3.4.6`                                                                             | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
 
-#### badges
+### badges
 
 | Homepage                                       | Application                                                   | This Repository                                                                                                                                            |
 | :---                                           | :---                                                          | :---                                                                                                                                                       |
@@ -122,7 +137,17 @@ Example:
 | [Shields.io](https://shields.io/)              | -                                                             | -                                                                                                                                                          |
 | [FOSSA](https://fossa.com/)                    | [fossabot](https://github.com/fossabot)                       | [aimay](https://app.fossa.com/projects/git%2Bgithub.com%2Fghsable%2Faimay?ref=badge_large)                                                                 |
 
-### app.run
+### others
+
+| Homepage                                       | GitHub                                          | This Repository                                                             |
+| :---                                           | :---                                            | :---                                                                        |
+| [Stale](https://probot.github.io/apps/stale/)  | [probot/stale](https://github.com/probot/stale) | [stale.yml](https://github.com/ghsable/aimay/blob/master/.github/stale.yml) |
+| [GitHub Learning Lab](https://lab.github.com/) | -                                               | [ghsable/github-slideshow](https://github.com/ghsable/github-slideshow)     |
+| [ZenHub](https://www.zenhub.com/)              | [ZenHub](https://github.com/ZenHubIO)           | aimay                                                                       |
+| [Zube](https://zube.io/)                       | [zube](https://github.com/zubeio)               | aimay                                                                       |
+
+## app.run
+
 | Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)                                                 | HOST:PORT         |
 | :---  | :---                                                  | :---                                                                                                              | :---              |
 | 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                                                                 | `0.0.0.0:${PORT}` |
