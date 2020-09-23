@@ -142,13 +142,14 @@ Example:
 
 ### others
 
-| Homepage                                       | GitHub                                                                              | This Repository                                                                       |
-| :---                                           | :---                                                                                | :---                                                                                  |
-| [Dependabot](https://dependabot.com/)          | [Dependabot Preview](https://github.com/marketplace/dependabot-preview)             | [dependabot.yml](https://github.com/ghsable/aimay/blob/master/.github/dependabot.yml) |
-| [Stale](https://probot.github.io/apps/stale/)  | [probot/stale](https://github.com/probot/stale)                                     | [stale.yml](https://github.com/ghsable/aimay/blob/master/.github/stale.yml)           |
-| [GitHub Learning Lab](https://lab.github.com/) | [github/learning-lab-components](https://github.com/github/learning-lab-components) | [ghsable/github-slideshow](https://github.com/ghsable/github-slideshow)               |
-| [ZenHub](https://www.zenhub.com/)              | [ZenHub](https://github.com/ZenHubIO)                                               | aimay                                                                                 |
-| [Zube](https://zube.io/)                       | [zube](https://github.com/zubeio)                                                   | aimay                                                                                 |
+| Homepage                                                    | GitHub                                                                              | This Repository                                                                       |
+| :---                                                        | :---                                                                                | :---                                                                                  |
+| [gitignore.io](https://www.toptal.com/developers/gitignore) | [toptal/gitignore.io](https://github.com/toptal/gitignore.io)                       | [.gitignore](https://github.com/ghsable/aimay/blob/master/.gitignore)                 |
+| [Dependabot](https://dependabot.com/)                       | [Dependabot Preview](https://github.com/marketplace/dependabot-preview)             | [dependabot.yml](https://github.com/ghsable/aimay/blob/master/.github/dependabot.yml) |
+| [Stale](https://probot.github.io/apps/stale/)               | [probot/stale](https://github.com/probot/stale)                                     | [stale.yml](https://github.com/ghsable/aimay/blob/master/.github/stale.yml)           |
+| [GitHub Learning Lab](https://lab.github.com/)              | [github/learning-lab-components](https://github.com/github/learning-lab-components) | [ghsable/github-slideshow](https://github.com/ghsable/github-slideshow)               |
+| [ZenHub](https://www.zenhub.com/)                           | [ZenHub](https://github.com/ZenHubIO)                                               | aimay                                                                                 |
+| [Zube](https://zube.io/)                                    | [zube](https://github.com/zubeio)                                                   | aimay                                                                                 |
 
 ## app.run
 
