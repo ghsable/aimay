@@ -111,7 +111,7 @@ Example:
 | [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)<br>[workflows](https://github.com/ghsable/aimay/tree/master/.github/workflows)                                   |
 | [GitHub Projects](https://github.com/features/project-management/) | [Projects](https://github.com/ghsable/aimay/projects)                                                     |
 | [GitHub Wiki](https://guides.github.com/features/wikis/)           | [Wiki](https://github.com/ghsable/aimay/wiki)                                                             |
-| [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)<br>[SECURITY.md](https://github.com/ghsable/aimay/blob/master/SECURITY.md)                                     |
+| [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)<br>[SECURITY.md](https://github.com/ghsable/aimay/blob/master/SECURITY.md)<br>[CODE_OF_CONDUCT.md](https://github.com/ghsable/aimay/blob/master/CODE_OF_CONDUCT.md) |
 | [GitHub Insights](https://github.com/features/insights)            | [Insights](https://github.com/ghsable/aimay/pulse)                                                        |
 | [GitHub Pages](https://pages.github.com/)                          | [aimay](https://ghsable.github.io/aimay/)                                                                 |
 | [GitHub Sponsors](https://github.com/sponsors)                     | [FUNDING.yml](https://github.com/ghsable/aimay/blob/master/.github/FUNDING.yml)                           |
