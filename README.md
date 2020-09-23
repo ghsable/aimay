@@ -86,17 +86,18 @@ Example:
 
 #### GitHub
 
-| Homepage                                                           | This Repository                                         |
-| :---                                                               | :---                                                    |
-| [GitHub](https://github.com/)                                      | [Code](https://github.com/ghsable/aimay)                |
-| [GitHub Issues](https://guides.github.com/features/issues/)        | [Issues](https://github.com/ghsable/aimay/issues)       |
-| [GitHub Pull requests](https://github.com/features/code-review/)   | [Pull requests](https://github.com/ghsable/aimay/pulls) |
-| [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)     |
-| [GitHub Projects](https://github.com/features/project-management/) | [Projects](https://github.com/ghsable/aimay/projects)   |
-| [GitHub Wiki](https://guides.github.com/features/wikis/)           | [Wiki](https://github.com/ghsable/aimay/wiki)           |
-| [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)   |
-| [GitHub Insights](https://github.com/features/insights)            | [Insights](https://github.com/ghsable/aimay/pulse)      |
-| [GitHub Pages](https://pages.github.com/)                          | [aimay](https://ghsable.github.io/aimay/)               |
+| Homepage                                                           | This Repository                                                                                           |
+| :---                                                               | :---                                                                                                      |
+| [GitHub](https://github.com/)                                      | [Code](https://github.com/ghsable/aimay)                                                                  |
+| [GitHub Issues](https://guides.github.com/features/issues/)        | [Issues](https://github.com/ghsable/aimay/issues)                                                         |
+| [GitHub Pull requests](https://github.com/features/code-review/)   | [Pull requests](https://github.com/ghsable/aimay/pulls)                                                   |
+| [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)                                                       |
+| [GitHub Projects](https://github.com/features/project-management/) | [Projects](https://github.com/ghsable/aimay/projects)                                                     |
+| [GitHub Wiki](https://guides.github.com/features/wikis/)           | [Wiki](https://github.com/ghsable/aimay/wiki)                                                             |
+| [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)                                                     |
+| [GitHub Insights](https://github.com/features/insights)            | [Insights](https://github.com/ghsable/aimay/pulse)                                                        |
+| [GitHub Pages](https://pages.github.com/)                          | [aimay](https://ghsable.github.io/aimay/)                                                                 |
+| [GitHub CodeQL](https://securitylab.github.com/tools/codeql)       | [codeql-analysis.yml](https://github.com/ghsable/aimay/blob/master/.github/workflows/codeql-analysis.yml) |
 
 #### actions
 
