@@ -27,5 +27,5 @@ docker_rm:
 	docker ps -a
 
 docker_rmi:
-	docker rmi `docker images -q`
+	docker rmi -f `docker images -q`
 	docker images
