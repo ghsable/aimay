@@ -7,4 +7,4 @@ This simple project is may-chan repo for Python projects.
 
 ---------------
 
-If you want to learn more about ``README`` files, check out `README.md <https://github.com/ghsable/aimay/blob/master/README.md>`_.
+If you want to learn more about ``README`` files, check out `README.md <https://github.com/ghsable/aimay/blob/main/README.md>`_.
