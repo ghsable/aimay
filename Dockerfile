@@ -1,0 +1,11 @@
+FROM python:3.8-buster
+
+ENV WORKDIR="/opt/app"
+WORKDIR ${WORKDIR}
+COPY . ${WORKDIR}
+
+RUN make init
+
+ENV LINE_CHANNEL_ACCESS_TOKEN=0
+ENV LINE_CHANNEL_SECRET=0
+RUN make run

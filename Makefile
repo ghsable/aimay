@@ -15,3 +15,17 @@ run:
 
 sdist:
 	python setup.py sdist
+
+docker_build:
+	docker build -t aimay .
+
+docker_run:
+	docker run aimay
+
+docker_rm:
+	docker rm `docker ps -a -q`
+	docker ps -a
+
+docker_rmi:
+	docker rmi `docker images -q`
+	docker images
