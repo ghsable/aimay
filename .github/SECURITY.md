@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-[README.md#Development](https://github.com/ghsable/aimay/blob/master/README.md#development)
+[README.md#Development](https://github.com/ghsable/aimay/blob/main/README.md#development)
 
 <!--
 Use this section to tell people about which versions of your project are
