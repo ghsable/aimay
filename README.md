@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.youtube.com/channel/UCZ6aj_JfxKjkaV8BLGw3WBw/about">
-    <img src="https://raw.githubusercontent.com/ghsable/aimay/master/.readme/images/may_readme.png" width="150" height="150" align="center" alt="may">
+    <img src="https://raw.githubusercontent.com/ghsable/aimay/main/.readme/images/may_readme.png" width="150" height="150" align="center" alt="may">
   </a>
   <h2 align="center">LINE Bot AI <a href="https://ghsable.github.io/aimay/">May</a></h2>
   <p align="center">🤖 -> 🐈 <- 🧠</p>
@@ -10,7 +10,7 @@
       <img alt="CI Passing" src="https://github.com/ghsable/aimay/workflows/CI/badge.svg">
     </a>
     <a href="https://codecov.io/gh/ghsable/aimay">
-      <img alt="Codecov" src="https://codecov.io/gh/ghsable/aimay/branch/master/graph/badge.svg">
+      <img alt="Codecov" src="https://codecov.io/gh/ghsable/aimay/branch/main/graph/badge.svg">
     </a>
     <a href="https://app.codacy.com/manual/ghsable/aimay?utm_source=github.com&utm_medium=referral&utm_content=ghsable/aimay&utm_campaign=Badge_Grade_Settings">
       <img alt="Codacy Badge" src="https://api.codacy.com/project/badge/Grade/ee9e836cc9bb41ba8b8624cc5784513a">
@@ -80,19 +80,19 @@ Example:
 # Development
 ## Requirement
 * [LINE](https://line.me/ja/)
-* [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/aimay/blob/master/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
+* [Python](https://www.python.org/) [3.8.5](https://github.com/ghsable/aimay/blob/main/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
 * [GitHub](#github) + [actions](#actions) + [badges](#badges) + [others](#others)
 * [Heroku](https://jp.heroku.com/)
 * cat<< [Requirement](#requirement) >(⋈MAY◍＞◡＜◍)。✧♡RIN♡
 
 ### modules
 
-| Homepage                                                         | PyPI                                                   | GitHub                                                                      | [Version](https://github.com/ghsable/aimay/blob/master/requirements.txt) | Environment variable(Heroku)                         |
+| Homepage                                                         | PyPI                                                   | GitHub                                                                      | [Version](https://github.com/ghsable/aimay/blob/main/requirements.txt) | Environment variable(Heroku)                         |
 | :---                                                             | :---                                                   | :---                                                                        | :---                                                                     | :---                                                 |
 | ~[uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/)~          | ~[uWSGI](https://pypi.org/project/uWSGI/)~             | ~[unbit/uwsgi](https://github.com/unbit/uwsgi)~                             | ~`2.0.19.1`~                                                             | ~`-`~                                                |
 | [Gunicorn](https://gunicorn.org/)                                | [gunicorn](https://pypi.org/project/gunicorn/)         | [benoitc/gunicorn](https://github.com/benoitc/gunicorn)                     | `20.0.4`                                                                 | `-`                                                  |
 | [nose](https://nose.readthedocs.io/en/latest/)                   | [nose](https://pypi.org/project/nose/)                 | [nose-devs/nose](https://github.com/nose-devs/nose)                         | `1.3.7`                                                                  | `-`                                                  |
-| [Sphinx](https://www.sphinx-doc.org/en/master/)                  | [Sphinx](https://pypi.org/project/Sphinx/)             | [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx)                   | `3.2.1`                                                                  | `-`                                                  |
+| [Sphinx](https://www.sphinx-doc.org/en/main/)                  | [Sphinx](https://pypi.org/project/Sphinx/)             | [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx)                   | `3.2.1`                                                                  | `-`                                                  |
 | [Codecov](https://codecov.io/)                                   | [codecov](https://pypi.org/project/codecov/)           | [codecov/codecov-python](https://github.com/codecov/codecov-python)         | `2.1.9`                                                                  | `-`                                                  |
 | [LINE Developers](https://developers.line.biz/ja/)               | [line-bot-sdk](https://pypi.org/project/line-bot-sdk/) | [line/line-bot-sdk-python](https://github.com/line/line-bot-sdk-python)     | `1.17.0`                                                                 | `LINE_CHANNEL_ACCESS_TOKEN`<br>`LINE_CHANNEL_SECRET` |
 | [Flask](https://flask.palletsprojects.com/en/1.1.x/)             | [Flask](https://pypi.org/project/Flask/)               | [pallets/flask](https://github.com/pallets/flask)                           | `1.1.2`                                                                  | `-`                                                  |
@@ -108,20 +108,20 @@ Example:
 | Homepage                                                           | This Repository                                                                                           |
 | :---                                                               | :---                                                                                                      |
 | [GitHub](https://github.com/)                                      | [Code](https://github.com/ghsable/aimay)                                                                  |
-| [GitHub Issues](https://guides.github.com/features/issues/)        | [Issues](https://github.com/ghsable/aimay/issues)<br>[ISSUE_TEMPLATE](https://github.com/ghsable/aimay/tree/master/.github/ISSUE_TEMPLATE)<br>[CONTRIBUTING.md](https://github.com/ghsable/aimay/blob/master/.github/CONTRIBUTING.md)<br>[SUPPORT.md](https://github.com/ghsable/aimay/blob/master/.github/SUPPORT.md) |
-| [GitHub Pull requests](https://github.com/features/code-review/)   | [Pull requests](https://github.com/ghsable/aimay/pulls)<br>[CODEOWNERS](https://github.com/ghsable/aimay/blob/master/.github/CODEOWNERS)<br>[pull_request_template.md](https://github.com/ghsable/aimay/blob/master/.github/pull_request_template.md) |
-| [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)<br>[workflows](https://github.com/ghsable/aimay/tree/master/.github/workflows) |
+| [GitHub Issues](https://guides.github.com/features/issues/)        | [Issues](https://github.com/ghsable/aimay/issues)<br>[ISSUE_TEMPLATE](https://github.com/ghsable/aimay/tree/main/.github/ISSUE_TEMPLATE)<br>[CONTRIBUTING.md](https://github.com/ghsable/aimay/blob/main/.github/CONTRIBUTING.md)<br>[SUPPORT.md](https://github.com/ghsable/aimay/blob/main/.github/SUPPORT.md) |
+| [GitHub Pull requests](https://github.com/features/code-review/)   | [Pull requests](https://github.com/ghsable/aimay/pulls)<br>[CODEOWNERS](https://github.com/ghsable/aimay/blob/main/.github/CODEOWNERS)<br>[pull_request_template.md](https://github.com/ghsable/aimay/blob/main/.github/pull_request_template.md) |
+| [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)<br>[workflows](https://github.com/ghsable/aimay/tree/main/.github/workflows) |
 | [GitHub Projects](https://github.com/features/project-management/) | [Projects](https://github.com/ghsable/aimay/projects)                                                     |
 | [GitHub Wiki](https://guides.github.com/features/wikis/)           | [Wiki](https://github.com/ghsable/aimay/wiki)                                                             |
-| [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)<br>[CODE_OF_CONDUCT.md](https://github.com/ghsable/aimay/blob/master/.github/CODE_OF_CONDUCT.md)<br>[SECURITY.md](https://github.com/ghsable/aimay/blob/master/.github/SECURITY.md)             |
+| [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)<br>[CODE_OF_CONDUCT.md](https://github.com/ghsable/aimay/blob/main/.github/CODE_OF_CONDUCT.md)<br>[SECURITY.md](https://github.com/ghsable/aimay/blob/main/.github/SECURITY.md)             |
 | [GitHub Insights](https://github.com/features/insights)            | [Insights](https://github.com/ghsable/aimay/pulse)                                                        |
 | [GitHub Pages](https://pages.github.com/)                          | [aimay](https://ghsable.github.io/aimay/)                                                                 |
-| [GitHub Sponsors](https://github.com/sponsors)                     | [FUNDING.yml](https://github.com/ghsable/aimay/blob/master/.github/FUNDING.yml)                           |
-| [GitHub CodeQL](https://securitylab.github.com/tools/codeql)       | [codeql-analysis.yml](https://github.com/ghsable/aimay/blob/master/.github/workflows/codeql-analysis.yml) |
+| [GitHub Sponsors](https://github.com/sponsors)                     | [FUNDING.yml](https://github.com/ghsable/aimay/blob/main/.github/FUNDING.yml)                           |
+| [GitHub CodeQL](https://securitylab.github.com/tools/codeql)       | [codeql-analysis.yml](https://github.com/ghsable/aimay/blob/main/.github/workflows/codeql-analysis.yml) |
 
 ### actions
 
-| Marketplace/Actions                                                                         | [Version](https://github.com/ghsable/aimay/blob/master/.github/workflows/main.yml)  | Environment variable(GitHub)                            |
+| Marketplace/Actions                                                                         | [Version](https://github.com/ghsable/aimay/blob/main/.github/workflows/main.yml)  | Environment variable(GitHub)                            |
 | :---                                                                                        | :---                                                                                | :---                                                    |
 | [Checkout](https://github.com/marketplace/actions/checkout)                                 | `2.x.x`                                                                             | `-`                                                     |
 | -                                                                                           | `-`                                                                                 | `A3RT_TALKAPI_APIKEY`                                   |
@@ -146,16 +146,16 @@ Example:
 
 | Homepage                                                    | GitHub                                                                              | This Repository                                                                       |
 | :---                                                        | :---                                                                                | :---                                                                                  |
-| [gitignore.io](https://www.toptal.com/developers/gitignore) | [toptal/gitignore.io](https://github.com/toptal/gitignore.io)                       | [.gitignore](https://github.com/ghsable/aimay/blob/master/.gitignore)                 |
-| [Dependabot](https://dependabot.com/)                       | [Dependabot Preview](https://github.com/marketplace/dependabot-preview)             | [dependabot.yml](https://github.com/ghsable/aimay/blob/master/.github/dependabot.yml) |
-| [Stale](https://probot.github.io/apps/stale/)               | [probot/stale](https://github.com/probot/stale)                                     | [stale.yml](https://github.com/ghsable/aimay/blob/master/.github/stale.yml)           |
+| [gitignore.io](https://www.toptal.com/developers/gitignore) | [toptal/gitignore.io](https://github.com/toptal/gitignore.io)                       | [.gitignore](https://github.com/ghsable/aimay/blob/main/.gitignore)                 |
+| [Dependabot](https://dependabot.com/)                       | [Dependabot Preview](https://github.com/marketplace/dependabot-preview)             | [dependabot.yml](https://github.com/ghsable/aimay/blob/main/.github/dependabot.yml) |
+| [Stale](https://probot.github.io/apps/stale/)               | [probot/stale](https://github.com/probot/stale)                                     | [stale.yml](https://github.com/ghsable/aimay/blob/main/.github/stale.yml)           |
 | [GitHub Learning Lab](https://lab.github.com/)              | [github/learning-lab-components](https://github.com/github/learning-lab-components) | [ghsable/github-slideshow](https://github.com/ghsable/github-slideshow)               |
 | [ZenHub](https://www.zenhub.com/)                           | [ZenHub](https://github.com/ZenHubIO)                                               | aimay                                                                                 |
 | [Zube](https://zube.io/)                                    | [zube](https://github.com/zubeio)                                                   | aimay                                                                                 |
 
 ## app.run
 
-| Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/master/Procfile)                                                 | HOST:PORT         |
+| Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/main/Procfile)                                                 | HOST:PORT         |
 | :---  | :---                                                  | :---                                                                                                              | :---              |
 | 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                                                                 | `0.0.0.0:${PORT}` |
 | 2     | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=$(($(grep -c processor /proc/cpuinfo)*2+1)) --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
