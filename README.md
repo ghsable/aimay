@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ghsable/aimay/master/.readme/images/may_readme.png" width="150" height="150" align="center" alt="may">
+  <a href="https://www.youtube.com/channel/UCZ6aj_JfxKjkaV8BLGw3WBw/about">
+    <img src="https://raw.githubusercontent.com/ghsable/aimay/master/.readme/images/may_readme.png" width="150" height="150" align="center" alt="may">
+  </a>
   <h2 align="center">LINE Bot AI <a href="https://ghsable.github.io/aimay/">May</a></h2>
   <p align="center">🤖 -> 🐈 <- 🧠</p>
 </p>
