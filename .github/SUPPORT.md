@@ -1,1 +1,1 @@
-<suna>@users.noreply.github.com
+support@[suna](https://github.com/ghsable)
