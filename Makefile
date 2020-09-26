@@ -20,7 +20,14 @@ docker_build:
 	docker build -t aimay .
 
 docker_run:
-	docker run aimay
+#	docker run --name aimay_bash -d -i -t aimay
+	docker run --name aimay_bash --rm -i -t aimay bash
+
+docker_exec:
+	docker exec -it aimay_bash bash
+
+docker_stop:
+	docker stop `docker ps -q`
 
 docker_rm:
 	docker rm `docker ps -a -q`
