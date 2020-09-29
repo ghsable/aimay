@@ -84,7 +84,7 @@ def handle_message(event):
 def handle_follow(event):
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text='友達追加ありがとうございますニャン'))
+        TextSendMessage(text='友達追加ありがとうございますニャン\nチャット例は「投稿」を見てくださいニャン'))
 
 if __name__ == "__main__":
    # get port from Heroku
