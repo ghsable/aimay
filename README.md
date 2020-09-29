@@ -56,7 +56,7 @@
 # Try it out!
 
 Use this Line QR code to add the Bot:  
-**OR CODE**
+[![](https://raw.githubusercontent.com/ghsable/aimay/main/.readme/images/QRCODE_S.png)](https://lin.ee/L7JQsBk)
 
 # Usage
 
