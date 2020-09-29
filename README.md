@@ -170,4 +170,6 @@ Example:
   * [Releases](https://github.com/ghsable/aimay/releases)
   * [Packages](https://github.com/ghsable/aimay/packages)
 
+---
+
 [BACK TO TOP](#readme)
