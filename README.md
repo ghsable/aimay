@@ -82,7 +82,7 @@ Example:
 
 ## Overview
 
-![overview](https://raw.githubusercontent.com/ghsable/aimay/main/.readme/drawio/overview.svg)
+[![overview](https://raw.githubusercontent.com/ghsable/aimay/main/.readme/drawio/overview.svg)](https://www.w3.org/Graphics/SVG/)
 
 ## Requirement
 
