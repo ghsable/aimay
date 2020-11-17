@@ -76,7 +76,7 @@ jobs:
     # AkhileshNS/heroku-deploy
     # https://github.com/AkhileshNS/heroku-deploy
     - name: Deploy to Heroku
-      uses: akhileshns/heroku-deploy@v3.4.6
+      uses: akhileshns/heroku-deploy@v3.6.8
       with:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
