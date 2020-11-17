@@ -1,4 +1,4 @@
-FROM python:3.8-buster
+FROM python:3.9.0-buster
 
 ENV WORKDIR="/opt/app"
 WORKDIR ${WORKDIR}
