@@ -85,7 +85,7 @@ def newsapi_response():
         i = random.randint(0, headlines_size - 1)
         headline_title = headlines['articles'][i]['title']
         headline_url = headlines['articles'][i]['url']
-        newsapi_reply = headline_title + '-' + headline_url
+        newsapi_reply = headline_title + ' - ' + headline_url
     return newsapi_reply
 
 import pya3rt
