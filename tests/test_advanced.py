@@ -38,6 +38,12 @@ class TestCore(unittest.TestCase):
     self.assertIsNone(reply[2])
     self.assertIsNone(reply[3])
 
+    reply = aimay.get_reply('text', '今日のニュースを知りたいな')
+    self.assertEqual('text', reply[0])
+    self.assertIsNotNone(reply[1])
+    self.assertIsNone(reply[2])
+    self.assertIsNone(reply[3])
+
     reply = aimay.get_reply('text', '面白いドラマあるかな')
     self.assertEqual('text', reply[0])
     self.assertIsNotNone(reply[1])

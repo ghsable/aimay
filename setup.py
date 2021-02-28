@@ -13,7 +13,7 @@ with open('LICENSE') as f:
 
 setup(
     name='aimay',
-    version='1.0.0',
+    version='1.1.0',
     description='LINE Bot AI May',
     long_description=readme,
     author='suna',

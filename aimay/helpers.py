@@ -13,7 +13,7 @@ def return_data(filename):
     filepath = os.path.join(os.getcwd(), 'aimay/data', filename)
     with open(filepath) as datafile:
         datalines = datafile.readlines()
-        dataline = datalines[random.randint(0,(len(datalines) - 1))].strip()
+        dataline = datalines[random.randint(0, (len(datalines) - 1))].strip()
     return dataline
 
 # LINE Available sticker list
@@ -27,7 +27,7 @@ def return_sticker(index):
     :rtype: str
     """
     if (index == 'sleep'):
-        sticker_switch = random.randint(0,2)
+        sticker_switch = random.randint(0, 2)
         if (sticker_switch == 0):
             # Brown, Cony & Sally
             reply_package = '11537'
@@ -41,7 +41,7 @@ def return_sticker(index):
             reply_package = '11539'
             reply_sticker = random.choice(['52114120', '52114121'])
     elif (index == 'variety'):
-        sticker_switch = random.randint(0,2)
+        sticker_switch = random.randint(0, 2)
         if (sticker_switch == 0):
             # Brown, Cony & Sally
             reply_package = '11537'
@@ -67,6 +67,26 @@ def return_sticker(index):
         reply_package = '11537'
         reply_sticker = '52002734'
     return reply_package, reply_sticker
+
+from newsapi import NewsApiClient
+def newsapi_response():
+    """
+    Return reply message from NewsAPI.
+
+    :returns: newsapi_reply
+    :rtype: str
+    """
+    # Top headlines - https://newsapi.org/docs/endpoints/top-headlines
+    newsapi = NewsApiClient(api_key=os.environ.get('NEWSAPI_APIKEY'))
+    headlines = newsapi.get_top_headlines(category='general', country='us')
+    newsapi_reply = '今日のニュースは無いですニャン'
+    if(headlines['totalResults'] > 0):
+        headlines_size = len(headlines['articles'])
+        i = random.randint(0, headlines_size - 1)
+        headline_title = headlines['articles'][i]['title']
+        headline_url = headlines['articles'][i]['url']
+        newsapi_reply = headline_title + '-' + headline_url
+    return newsapi_reply
 
 import pya3rt
 def talkapi_response(push_text):
