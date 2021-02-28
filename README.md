@@ -74,7 +74,7 @@ Example:
 | りんりん(相棒)の調子はどう？ | りんりんは寝ているニャン |
 | いい音楽ないかな | これを聴いているニャン<br>[あいみょん,裸の心](https://www.youtube.com/watch?v=yOAwvRmVIyo) |
 | 映画を観たいな | これを観ているニャン<br>[イミテーション・ゲーム](https://filmarks.com/movies/57847) |
-| 今日のニュースを知りたいな | これを読んでいるニャン<br>[News](https://newsapi.org/docs/endpoints/top-headlines) |
+| 今日のニュースを知りたいな | これを読んでいるニャン<br>Title - [URL](https://newsapi.org/docs/endpoints/top-headlines) |
 | 面白いドラマあるかな | ここを見ているニャン<br>[Filmarks](https://filmarks.com/list-drama/trend)<br>[TMDb](https://www.themoviedb.org/tv?language=ja) |
 | ゲームをやろうかな | ここを見ているニャン<br>[Metacritic](https://www.metacritic.com/game) |
 | 天気どうなるかな | ここを見ているニャン<br>[Google天気](https://www.google.co.jp/search?q=天気) |
