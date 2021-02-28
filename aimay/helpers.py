@@ -77,7 +77,7 @@ def newsapi_response():
     :rtype: str
     """
     # Top headlines - https://newsapi.org/docs/endpoints/top-headlines
-    newsapi = NewsApiClient(api_key=os.environ.get('NEWSAPI_APIKEY'))
+    newsapi = NewsApiClient(os.environ.get('NEWSAPI_APIKEY'))
     headlines = newsapi.get_top_headlines(category='general', country='us')
     newsapi_reply = '今日のニュースは無いですニャン'
     if(headlines['totalResults'] > 0):
