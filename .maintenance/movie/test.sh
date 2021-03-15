@@ -15,4 +15,3 @@ while read url
 #cat tenari tennashi_fix | sort -V >tenarinashi
 #rm tenari tennashi tennashi_urls tennashi_fix YYYYMMDD_MOVIES.txt
 #mv tenarinashi YYYYMMDD_MOVIES.txt
-

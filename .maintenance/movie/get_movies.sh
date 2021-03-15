@@ -13,4 +13,3 @@ if [ "${YN}" = "y" ]; then
 else
   exit 1;
 fi
-
