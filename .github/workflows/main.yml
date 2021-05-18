@@ -23,7 +23,6 @@ jobs:
 
     - name: Setup Python modules
       run: |
-        pip uninstall -r requirements.txt
         make init
     # -----
     # ----- Codecov
