@@ -89,7 +89,7 @@ Example:
 ## Requirement
 
 * [LINE](https://line.me/ja/)
-* [Python](https://www.python.org/) [3.9.0](https://github.com/ghsable/aimay/blob/main/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
+* [Python](https://www.python.org/) [3.9.5](https://github.com/ghsable/aimay/blob/main/runtime.txt) + [navdeep-G/samplemod](https://github.com/navdeep-G/samplemod) + [modules](#modules)
 * [GitHub](#github) + [actions](#actions) + [badges](#badges) + [others](#others)
 * [Heroku](https://jp.heroku.com/)
 * cat<< [Requirement](#requirement) >(⋈MAY◍＞◡＜◍)。✧♡RIN♡
