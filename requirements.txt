@@ -8,3 +8,4 @@ Flask==2.0.0
 newsapi-python==0.2.6
 pya3rt==1.1
 #tmdbv3api==1.6.2
+Jinja2==3.0.0
