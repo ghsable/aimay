@@ -70,8 +70,7 @@ def return_sticker(index):
 
 from newsapi import NewsApiClient
 def newsapi_response():
-    """
-    Return reply message from NewsAPI.
+    """Return reply message from NewsAPI.
 
     :returns: newsapi_reply
     :rtype: str
@@ -90,8 +89,7 @@ def newsapi_response():
 
 import pya3rt
 def talkapi_response(push_text):
-    """
-    Return reply message from A3RT/TalkAPI.
+    """Return reply message from A3RT/TalkAPI.
 
     :param push_text: push message text
     :type push_text: str
