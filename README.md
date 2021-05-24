@@ -171,7 +171,7 @@ Example:
 
 | Case  | WSGI                                                  | [commands](https://github.com/ghsable/aimay/blob/main/Procfile)                                                   | HOST:PORT         |
 | :---  | :---                                                  | :---                                                                                                              | :---              |
-| 1     | [Flask](https://flask.palletsprojects.com/en/1.1.x/)  | `python -m aimay`                                                                                                 | `0.0.0.0:${PORT}` |
+| 1     | [Flask](https://palletsprojects.com/p/flask/)         | `python -m aimay`                                                                                                 | `0.0.0.0:${PORT}` |
 | 2     | [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) | `uwsgi --workers=$(($(grep -c processor /proc/cpuinfo)*2+1)) --http=0.0.0.0:${PORT} --mount /=aimay.__main__:app` | `0.0.0.0:${PORT}` |
 | **3** | [Gunicorn](https://gunicorn.org/)                     | `gunicorn --workers $(($(grep -c processor /proc/cpuinfo)*2+1)) aimay.__main__:app`                               | `0.0.0.0:${PORT}` |
 
