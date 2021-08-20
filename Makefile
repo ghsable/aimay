@@ -1,4 +1,5 @@
 init:
+	python -m pip install --upgrade pip
 	pip uninstall -r requirements.txt
 	pip install -r requirements.txt
 
