@@ -68,24 +68,24 @@ def return_sticker(index):
         reply_sticker = '52002734'
     return reply_package, reply_sticker
 
-from newsapi import NewsApiClient
-def newsapi_response():
-    """Return reply message from NewsAPI.
-
-    :returns: newsapi_reply
-    :rtype: str
-    """
-    # Top headlines - https://newsapi.org/docs/endpoints/top-headlines
-    newsapi = NewsApiClient(os.environ.get('NEWSAPI_APIKEY'))
-    headlines = newsapi.get_top_headlines(category='general', country='us')
-    newsapi_reply = '今日のニュースは無いですニャン'
-    if(headlines['totalResults'] > 0):
-        headlines_size = len(headlines['articles'])
-        i = random.randint(0, headlines_size - 1)
-        headline_title = headlines['articles'][i]['title']
-        headline_url = headlines['articles'][i]['url']
-        newsapi_reply = headline_title + ' - ' + headline_url
-    return newsapi_reply
+#from newsapi import NewsApiClient
+#def newsapi_response():
+#    """Return reply message from NewsAPI.
+#
+#    :returns: newsapi_reply
+#    :rtype: str
+#    """
+#    # Top headlines - https://newsapi.org/docs/endpoints/top-headlines
+#    newsapi = NewsApiClient(os.environ.get('NEWSAPI_APIKEY'))
+#    headlines = newsapi.get_top_headlines(category='general', country='us')
+#    newsapi_reply = '今日のニュースは無いですニャン'
+#    if(headlines['totalResults'] > 0):
+#        headlines_size = len(headlines['articles'])
+#        i = random.randint(0, headlines_size - 1)
+#        headline_title = headlines['articles'][i]['title']
+#        headline_url = headlines['articles'][i]['url']
+#        newsapi_reply = headline_title + ' - ' + headline_url
+#    return newsapi_reply
 
 import pya3rt
 def talkapi_response(push_text):
