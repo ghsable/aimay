@@ -28,9 +28,9 @@ def get_reply(push_type, push_text):
         elif ('えいが' in push_text) or ('映画' in push_text):
             reply_type = 'text'
             reply_text = 'これを観ているニャン\n' + helpers.return_data('MOVIE.txt')
-        elif ('にゅーす' in push_text) or ('ニュース' in push_text):
-            reply_type = 'text'
-            reply_text = 'これを読んでいるニャン\n' + helpers.newsapi_response()
+#        elif ('にゅーす' in push_text) or ('ニュース' in push_text):
+#            reply_type = 'text'
+#            reply_text = 'これを読んでいるニャン\n' + helpers.newsapi_response()
         elif ('どらま' in push_text) or ('ドラマ' in push_text):
             reply_type = 'text'
             reply_text = 'ここを見ているニャン\n' + 'https://filmarks.com/list-drama/trend\n' + 'https://www.themoviedb.org/tv?language=ja'
