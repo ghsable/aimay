@@ -29,7 +29,7 @@ jobs:
     # DONE : Setup Python modules(command coverage,codecov)
     - name: Generate coverage report
       run: |
-        export NEWSAPI_APIKEY=${{ secrets.NEWSAPI_APIKEY }}
+        #export NEWSAPI_APIKEY=${{ secrets.NEWSAPI_APIKEY }}
         export A3RT_TALKAPI_APIKEY=${{ secrets.A3RT_TALKAPI_APIKEY }}
         # option .coveragerc
         # create .coverage
