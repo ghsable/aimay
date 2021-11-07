@@ -87,7 +87,7 @@ def return_sticker(index):
 #        newsapi_reply = headline_title + ' - ' + headline_url
 #    return newsapi_reply
 
-import pya3rt
+import requests
 def talkapi_response(push_text):
     """Return reply message from A3RT/TalkAPI.
 
@@ -96,7 +96,8 @@ def talkapi_response(push_text):
     :returns: talkapi_reply
     :rtype: str
     """
-    talkapi_client = pya3rt.TalkClient(os.environ.get('A3RT_TALKAPI_APIKEY'))
-    talkapi_response = talkapi_client.talk(push_text)
+    post_url = 'https://api.a3rt.recruit.co.jp/talk/v1/smalltalk'
+    post_data = {'apikey': os.environ.get('A3RT_TALKAPI_APIKEY'), 'query': push_text}
+    talkapi_response = requests.post(post_url, post_data).json()
     talkapi_reply = ((talkapi_response['results'])[0])['reply']
     return talkapi_reply
