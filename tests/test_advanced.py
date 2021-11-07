@@ -81,11 +81,11 @@ class TestCore(unittest.TestCase):
     self.assertIsNone(reply[2])
     self.assertIsNone(reply[3])
 
-#    reply = aimay.get_reply('text', 'あれ')
-#    self.assertEqual('text', reply[0])
-#    self.assertIsNotNone(reply[1])
-#    self.assertIsNone(reply[2])
-#    self.assertIsNone(reply[3])
+    reply = aimay.get_reply('text', 'あれ')
+    self.assertEqual('text', reply[0])
+    self.assertIsNotNone(reply[1])
+    self.assertIsNone(reply[2])
+    self.assertIsNone(reply[3])
 
     # --- sticker
     for i in range(10):
