@@ -133,7 +133,7 @@ Example:
 
 | Marketplace/Actions                                                                         | [Version](https://github.com/ghsable/aimay/blob/main/.github/workflows/main.yml) | Environment variable(GitHub)                            |
 | :---                                                                                        | :---                                                                             | :---                                                    |
-| [Checkout](https://github.com/marketplace/actions/checkout)                                 | `2.x.x`                                                                          | `-`                                                     |
+| [Checkout](https://github.com/marketplace/actions/checkout)                                 | `3.x.x`                                                                          | `-`                                                     |
 | [Setup Python](https://github.com/marketplace/actions/setup-python)                         | `2.x.x`                                                                          | `-`                                                     |
 | -                                                                                           | `-`                                                                              | `A3RT_TALKAPI_APIKEY`                                   |
 | [Codecov](https://github.com/marketplace/actions/codecov)                                   | `1.x.x`                                                                          | `CODECOV_TOKEN`                                         |
