@@ -137,7 +137,7 @@ Example:
 | [Setup Python](https://github.com/marketplace/actions/setup-python)                         | `4.x.x`                                                                          | `-`                                                     |
 | -                                                                                           | `-`                                                                              | `A3RT_TALKAPI_APIKEY`                                   |
 | [Codecov](https://github.com/marketplace/actions/codecov)                                   | `3.x.x`                                                                          | `CODECOV_TOKEN`                                         |
-| [Codacy Coverage Reporter](https://github.com/marketplace/actions/codacy-coverage-reporter) | `1.0.0`                                                                          | `CODACY_PROJECT_TOKEN`                                  |
+| [Codacy Coverage Reporter](https://github.com/marketplace/actions/codacy-coverage-reporter) | `1.3.0`                                                                          | `CODACY_PROJECT_TOKEN`                                  |
 | [GitHub Pages action](https://github.com/marketplace/actions/github-pages-action)           | `3.x.x`                                                                          | `GITHUB_TOKEN`                                          |
 | [Deploy to Heroku](https://github.com/marketplace/actions/deploy-to-heroku)                 | `3.12.12`                                                                        | `HEROKU_API_KEY`<br>`HEROKU_APP_NAME`<br>`HEROKU_EMAIL` |
 
