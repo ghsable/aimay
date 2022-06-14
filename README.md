@@ -115,20 +115,20 @@ Example:
 
 ### GitHub
 
-| Homepage                                                           | This Repository                                                                                         |
-| :---                                                               | :---                                                                                                    |
-| [GitHub](https://github.com/)                                      | [Code](https://github.com/ghsable/aimay)                                                                |
-| [GitHub Issues](https://guides.github.com/features/issues/)        | [Issues](https://github.com/ghsable/aimay/issues)<br>[ISSUE_TEMPLATE](https://github.com/ghsable/aimay/tree/main/.github/ISSUE_TEMPLATE)<br>[CONTRIBUTING.md](https://github.com/ghsable/aimay/blob/main/.github/CONTRIBUTING.md)<br>[SUPPORT.md](https://github.com/ghsable/aimay/blob/main/.github/SUPPORT.md) |
-| [GitHub Pull requests](https://github.com/features/code-review/)   | [Pull requests](https://github.com/ghsable/aimay/pulls)<br>[CODEOWNERS](https://github.com/ghsable/aimay/blob/main/.github/CODEOWNERS)<br>[pull_request_template.md](https://github.com/ghsable/aimay/blob/main/.github/pull_request_template.md) |
-| [GitHub Discussions](https://github.com/orgs/Homebrew/discussions) | [Discussions](https://github.com/ghsable/aimay/discussions)                                             |
-| [GitHub Actions](https://github.com/features/actions/)             | [Actions](https://github.com/ghsable/aimay/actions)<br>[workflows](https://github.com/ghsable/aimay/tree/main/.github/workflows) |
-| [GitHub Projects](https://github.com/features/project-management/) | [Projects](https://github.com/ghsable/aimay/projects)                                                   |
-| [GitHub Wiki](https://guides.github.com/features/wikis/)           | [Wiki](https://github.com/ghsable/aimay/wiki)                                                           |
-| [GitHub Security](https://github.com/features/security)            | [Security](https://github.com/ghsable/aimay/security)<br>[CODE_OF_CONDUCT.md](https://github.com/ghsable/aimay/blob/main/.github/CODE_OF_CONDUCT.md)<br>[SECURITY.md](https://github.com/ghsable/aimay/blob/main/.github/SECURITY.md)             |
-| [GitHub Insights](https://github.com/features/insights)            | [Insights](https://github.com/ghsable/aimay/pulse)                                                      |
-| [GitHub Pages](https://pages.github.com/)                          | [aimay](https://ghsable.github.io/aimay/)                                                               |
-| [GitHub Sponsors](https://github.com/sponsors)                     | [FUNDING.yml](https://github.com/ghsable/aimay/blob/main/.github/FUNDING.yml)                           |
-| [GitHub CodeQL](https://securitylab.github.com/tools/codeql)       | [codeql-analysis.yml](https://github.com/ghsable/aimay/blob/main/.github/workflows/codeql-analysis.yml) |
+| Homepage                                                                    | This Repository                                                                                         |
+| :---                                                                        | :---                                                                                                    |
+| [GitHub](https://github.com/)                                               | [Code](https://github.com/ghsable/aimay)                                                                |
+| [GitHub Issues](https://guides.github.com/features/issues/)                 | [Issues](https://github.com/ghsable/aimay/issues)<br>[ISSUE_TEMPLATE](https://github.com/ghsable/aimay/tree/main/.github/ISSUE_TEMPLATE)<br>[CONTRIBUTING.md](https://github.com/ghsable/aimay/blob/main/.github/CONTRIBUTING.md)<br>[SUPPORT.md](https://github.com/ghsable/aimay/blob/main/.github/SUPPORT.md) |
+| [GitHub Pull requests](https://github.com/features/code-review/)            | [Pull requests](https://github.com/ghsable/aimay/pulls)<br>[CODEOWNERS](https://github.com/ghsable/aimay/blob/main/.github/CODEOWNERS)<br>[pull_request_template.md](https://github.com/ghsable/aimay/blob/main/.github/pull_request_template.md) |
+| [GitHub Discussions](https://github.com/orgs/github-community/discussions/) | [Discussions](https://github.com/ghsable/aimay/discussions)                                             |
+| [GitHub Actions](https://github.com/features/actions/)                      | [Actions](https://github.com/ghsable/aimay/actions)<br>[workflows](https://github.com/ghsable/aimay/tree/main/.github/workflows) |
+| [GitHub Projects](https://github.com/features/project-management/)          | [Projects](https://github.com/ghsable/aimay/projects)                                                   |
+| [GitHub Wiki](https://guides.github.com/features/wikis/)                    | [Wiki](https://github.com/ghsable/aimay/wiki)                                                           |
+| [GitHub Security](https://github.com/features/security)                     | [Security](https://github.com/ghsable/aimay/security)<br>[CODE_OF_CONDUCT.md](https://github.com/ghsable/aimay/blob/main/.github/CODE_OF_CONDUCT.md)<br>[SECURITY.md](https://github.com/ghsable/aimay/blob/main/.github/SECURITY.md)             |
+| [GitHub Insights](https://github.com/features/insights)                     | [Insights](https://github.com/ghsable/aimay/pulse)                                                      |
+| [GitHub Pages](https://pages.github.com/)                                   | [aimay](https://ghsable.github.io/aimay/)                                                               |
+| [GitHub Sponsors](https://github.com/sponsors)                              | [FUNDING.yml](https://github.com/ghsable/aimay/blob/main/.github/FUNDING.yml)                           |
+| [GitHub CodeQL](https://securitylab.github.com/tools/codeql)                | [codeql-analysis.yml](https://github.com/ghsable/aimay/blob/main/.github/workflows/codeql-analysis.yml) |
 
 ### actions
 
